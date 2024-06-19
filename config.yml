@@ -1,0 +1,90 @@
+baseURL: ""
+languageCode: en-us
+theme: PaperMod
+title: Redwan Benmansour
+
+enableEmoji: true
+
+defaultContentLanguage: fr
+defaultContentLanguageInSubdir: true
+
+
+
+
+languages:
+  en:
+    languageName: English
+    weight: 10
+    contentDir: content/en
+    title: Redwan
+    menu:
+      main:
+        - identifier: aboutme
+          name: About me
+          url: /en/aboutme/
+          weight: 10
+        - identifier: projets
+          name: Projects
+          url: /en/projects/
+          weight: 20
+    params:
+      profileMode:
+        enabled: true
+        title: "Redwan Benmansour" # optional default will be site title
+        subtitle: "Second-year student in EEE, I am passionate about my projects and aim to become an engineer. I am eager to master modern technology to create innovative solutions for a better future."
+        imageUrl: "en/redou.jpg" # optional
+        imageTitle: "Redwan Benmansour" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+          - name: Download resume
+            url: "/en/CV.pdf"
+
+      socialIcons: # optional
+        - name: "linkedin"
+          url: "https://www.linkedin.com/in/redwan-benmansour-48502117a/"
+        - name: "github"
+          url: "https://github.com/redwanbnmnsr"
+        - name: "email"
+          url: "mailto:redwan.benmansour@etu.univ-orleans.fr"
+
+  fr:
+    languageName: French
+    weight: 20
+    title: Redwan
+    contentDir: content/fr
+    menu:
+      main:
+        - identifier: aboutme
+          name: À propos de moi
+          url: /fr/aboutme/
+          weight: 10
+        - identifier: projects
+          name: Projets
+          url: /fr/projects/
+          weight: 20
+        - identifier: portfolio
+          name: Portfolio (BUT GEII)
+          url: /fr/portfolio/
+          weight: 30
+
+    params:
+      profileMode:
+        enabled: true
+        title: "Redwan Benmansour" # optional default will be site title
+        subtitle: "Étudiant en deuxième année de GEII. Je suis passionné par mes projets et je souhaite devenir ingénieur. J'ai hâte de maîtriser les technologies modernes afin de créer des solutions innovantes pour un avenir meilleur."
+        imageUrl: "fr/redou.jpg" # optional
+        imageTitle: "Redwan Benmansour" # optional
+        imageWidth: 120 # custom size
+        imageHeight: 120 # custom size
+        buttons:
+          - name: Télécharger le CV
+            url: "/fr/CV.pdf"
+
+      socialIcons: # optional
+        - name: "linkedin"
+          url: "https://www.linkedin.com/in/redwan-benmansour-48502117a/"
+        - name: "github"
+          url: "https://github.com/redwanbnmnsr"
+        - name: "email"
+          url: "mailto:redwan.benmansour@outlook.com"
