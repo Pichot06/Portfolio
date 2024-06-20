@@ -3,13 +3,18 @@ languageCode: en-us
 theme: PaperMod
 title: Redwan Benmansour
 
-enableEmoji: true
-
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 
 
-
+params:
+  defaultTheme: light
+  disableThemeToggle: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  author: Redwan Benmansour
 
 languages:
   en:
@@ -19,14 +24,18 @@ languages:
     title: Redwan
     menu:
       main:
-        - identifier: aboutme
-          name: About me
-          url: /en/aboutme/
+        - identifier: accueil
+          name: Home 
+          url: /en/
           weight: 10
+        - identifier: aboutme
+          name: About
+          url: /en/aboutme/
+          weight: 20
         - identifier: projets
           name: Projects
           url: /en/projects/
-          weight: 20
+          weight: 30
     params:
       profileMode:
         enabled: true
@@ -55,18 +64,23 @@ languages:
     contentDir: content/fr
     menu:
       main:
-        - identifier: aboutme
-          name: À propos de moi
-          url: /fr/aboutme/
+        - identifier: accueil
+          name: Accueil 
+          url: /fr/
           weight: 10
+        - identifier: aboutme
+          name: À propos
+          url: /fr/aboutme/
+          weight: 20
         - identifier: projects
           name: Projets
           url: /fr/projects/
-          weight: 20
+          weight: 30
         - identifier: portfolio
           name: Portfolio (BUT GEII)
-          url: /fr/portfolio/
-          weight: 30
+          url: /fr/Compétences/
+          weight: 40
+    DateFormat: "2 January 2006"
 
     params:
       profileMode:

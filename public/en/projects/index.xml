@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Projects on Redwan</title>
+    <link>//localhost:1313/en/projects/</link>
+    <description>Recent content in Projects on Redwan</description>
+    <generator>Hugo -- 0.126.3</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 04 Apr 2024 23:15:00 +0700</lastBuildDate>
+    <atom:link href="//localhost:1313/en/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projet Ball and Beam</title>
+      <link>//localhost:1313/en/projects/ball_and_beam/</link>
+      <pubDate>Thu, 04 Apr 2024 23:15:00 +0700</pubDate>
+      <guid>//localhost:1313/en/projects/ball_and_beam/</guid>
+      <description>Un projet de deuxième année de BUT GEII pour prendre en main les notions d&amp;#39;asservissement et de régulation.</description>
+    </item>
+  </channel>
+</rss>
