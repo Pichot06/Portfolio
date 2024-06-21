@@ -11,6 +11,7 @@ cover:
   relative: true
 showtoc: true
 draft: false
+layout: single
 ---
 
 ### Un concours ouvert à toute formation

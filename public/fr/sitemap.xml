@@ -33,10 +33,30 @@
     <loc>//localhost:1313/fr/comp%C3%A9tences/installer/</loc>
   </url><url>
     <loc>//localhost:1313/fr/projects/ball_and_beam/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/projects/ball_and_beam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/projects/ball_and_beam/"
+                />
   </url><url>
     <loc>//localhost:1313/fr/comp%C3%A9tences/maintenir/</loc>
   </url><url>
     <loc>//localhost:1313/fr/projects/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/en/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/projects/"
+                />
   </url><url>
     <loc>//localhost:1313/fr/</loc>
     <xhtml:link

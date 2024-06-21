@@ -11,7 +11,7 @@ params:
   defaultTheme: light
   disableThemeToggle: true
   ShowReadingTime: true
-  ShowShareButtons: true
+# ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   author: Redwan Benmansour

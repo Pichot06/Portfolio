@@ -92,6 +92,7 @@
 .post-content figure,
 .post-content ul {
     margin-bottom: var(--content-gap);
+    text-align: justify; /* Ajout pour justifier le texte */
 }
 
 .post-content ol,
@@ -101,6 +102,7 @@
 
 .post-content li {
     margin-top: 5px;
+    text-align: justify; /* Ajout pour justifier le texte des listes */
 }
 
 .post-content li p {
@@ -122,6 +124,7 @@
     width: 75%;
     margin-inline-start: 0;
     padding-inline-start: 10px;
+    text-align: justify; /* Ajout pour justifier le texte des définitions */
 }
 
 .post-content dd ~ dd,
