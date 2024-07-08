@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>S6 on Redwan</title>
+    <link>//localhost:1313/fr/s6/</link>
+    <description>Recent content in S6 on Redwan</description>
+    <generator>Hugo -- 0.126.3</generator>
+    <language>fr</language>
+    <atom:link href="//localhost:1313/fr/s6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concevoir</title>
+      <link>//localhost:1313/fr/portfolio/s6/concevoir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/portfolio/s6/concevoir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Installer</title>
+      <link>//localhost:1313/fr/portfolio/s6/installer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/portfolio/s6/installer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Maintenir</title>
+      <link>//localhost:1313/fr/portfolio/s6/maintenir/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/portfolio/s6/maintenir/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Vérifier</title>
+      <link>//localhost:1313/fr/portfolio/s6/verifier/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/portfolio/s6/verifier/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

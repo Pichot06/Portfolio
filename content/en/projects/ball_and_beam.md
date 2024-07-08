@@ -1,8 +1,8 @@
 ---
-title: "Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA"
+title: "GEII students from the Indre IUT present their « Ball and Beam » project at the national EEA Club competition."
 date: 2024-13-05T23:15:00+07:00
 category: projects
-summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concours « Mon projet en 5 min » du club EEA, les deux étudiants Roman Couet et Redwan Benmansour déposent aujourd’hui leur candidature vidéo. Leur objectif ':' remporter le concours et la dotation de 2000€.
+summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. As part of the EEA Club's « My project in 5 minutes » competition, students Roman Couet and Redwan Benmansour are submitting their video entries today. Their goal:' to win the competition and the €2,000 prize.
 description:
 cover:
   image: fr/projects/IMG_4717.jpg
@@ -13,13 +13,13 @@ showtoc: true
 draft: false
 ---
 
-### Un concours ouvert à toute formation
-L’objectif du concours est de présenter en 5 min un projet par une vidéo. Le concours est soutenu par le ministère de l’Enseignement Supérieur et de la Recherche et par ses partenaires : SICK, VEGA, Phoenix Contact, RADIOSPARES et les vélos Pi-Pop. Il se décline en deux catégories : une catégorie « BAC+1 à BAC+3 » et « BAC+4 à BAC+5 ». Le concours cible tout établis sement académique. Les formations admises sont très diverses : « Électronique », « Électrotechnique », « Automatique », « Signal et de l’Image » et « Génie Industriel ». Tous les étudiants inscrits dans une formation portant mention des précédents domaines peuvent s’y inscrire, que ce soit pour un projet académique ou personnel.
-### Le projet « Ball and Beam » de deux étudiants GEII
-Les deux étudiants de GEII de l’IUT de l’Indre ont misé leurs chances sur leur projet Ball and Beam. Dans un premier temps, il a fallu réaliser une maquette de régulation de position d’une bille (voir photo ci-contre). La partie matérielle de la maquette a pu être réalisée grâce au matériel pédagogique de l’IUT de l’Indre. L’impression 3D a permis d’accélérer les délais de livraison et de limiter les couts. De l’autre côté, la partie logicielle de la maquette a été assurée grâce au logiciel MATLAB Simulink, compatible avec leur microcontrôleur Arduino Mega 2650.
-### Une compétition sélective : La finale à Paris !
-Dès le 20 mai, seuls quelques projets seront retenus. Les étudiants sélectionnés pourront alors participer à la finale du concours. Elle se déroulera à Paris dans la semaine du 10 juin 2024. Chaque équipe disposera alors de 15 minutes pour présenter oralement son travail avant de diffuser leur vidéo au jury. (Règlement Club EEA). Parmi les candidats sélectionnés, seul un groupe remportera le concours et la dotation de 2000€. Pour les autres groupes, d’autres prix seront fournis par les différents partenaires du concour s.
-### Le 13 mai 2024, aujourd’hui tout se joue !
-Roman Couet et Redwan Benmansour doivent aujourd’hui, le 13 mai 2024, déposer leur candidature. Elle est comprise d’un descriptif de 2 pages de la formation suivie et du projet proposé, du règlement du concours signé par les deux étudiants, et de la vidéo de présentation du projet durant 5 min. Leur motivation est grande et leur ambition et d’être sélectionné pour la finale à Paris. Redwan l’affirme : « Il n’y a pas de bon ou de mauvais projet, ce qui compte pour nous et de valoriser un travail dont nous sommes fiers, et d’aller jusqu’au bout ! »
+### A competition open to all levels of education
+The aim of the competition is to present a project in a 5-minute video. The competition is supported by the French Ministry of Higher Education and Research and its partners: SICK, VEGA, Phoenix Contact, RADIOSPARES and Pi-Pop bikes. There are two categories: "BAC+1 to BAC+3" and "BAC+4 to BAC+5". The competition is open to all academic establishments. A wide range of courses are eligible: "Electronics", "Electrical Engineering", "Automation", "Signal and Image" and "Industrial Engineering". All students enrolled in any of the above-mentioned courses can apply, whether for an academic or personal project.
+### The "Ball and Beam" project of two GEII students
+The two GEII students from the Indre IUT staked their chances on their Ball and Beam project. First of all, they had to build a ball position control model (see photo opposite). The material part of the model was produced using teaching aids from the IUT de l'Indre. 3D printing was used to speed up delivery times and keep costs down. On the other hand, the software for the model was provided by MATLAB Simulink software, compatible with their Arduino Mega 2650 microcontroller.
+### A selective competition: The final in Paris!
+From May 20, only a few projects will be selected. The selected students will then be able to take part in the final of the competition. It will take place in Paris during the week of June 10, 2024. Each team will then have 15 minutes to present its work orally before broadcasting their video to the jury. (Club EEA regulations). Among the selected candidates, only one group will win the competition and the €2,000 prize. For the other groups, other prizes will be provided by the various competition partners.
+### On May 13, 2024, it's the big day!
+Roman Couet and Redwan Benmansour must submit their application today, May 13, 2024. Their application includes a 2-page description of their training and proposed project, competition rules signed by the two students, and a 5-minute video presentation of their project. Their motivation is high, and their ambition is to be selected for the final in Paris. As Redwan says: "There's no such thing as a good or bad project. What counts for us is to showcase work we're proud of, and to see it through to the end!
 
 {{< youtube fx4ItUyV3Q8 >}}

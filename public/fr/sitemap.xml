@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:1313/fr/aboutme/</loc>
+    <loc>//localhost:1313/fr/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:1313/en/aboutme/"
+                href="//localhost:1313/en/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="//localhost:1313/fr/aboutme/"
+                href="//localhost:1313/fr/about/"
                 />
   </url><url>
     <loc>//localhost:1313/fr/categories/</loc>
@@ -26,12 +26,6 @@
                 href="//localhost:1313/fr/categories/"
                 />
   </url><url>
-    <loc>//localhost:1313/fr/comp%C3%A9tences/</loc>
-  </url><url>
-    <loc>//localhost:1313/fr/comp%C3%A9tences/concevoir/</loc>
-  </url><url>
-    <loc>//localhost:1313/fr/comp%C3%A9tences/installer/</loc>
-  </url><url>
     <loc>//localhost:1313/fr/projects/ball_and_beam/</loc>
     <xhtml:link
                 rel="alternate"
@@ -44,7 +38,7 @@
                 href="//localhost:1313/fr/projects/ball_and_beam/"
                 />
   </url><url>
-    <loc>//localhost:1313/fr/comp%C3%A9tences/maintenir/</loc>
+    <loc>//localhost:1313/fr/portfolio/</loc>
   </url><url>
     <loc>//localhost:1313/fr/projects/</loc>
     <xhtml:link
@@ -81,7 +75,5 @@
                 hreflang="fr"
                 href="//localhost:1313/fr/tags/"
                 />
-  </url><url>
-    <loc>//localhost:1313/fr/comp%C3%A9tences/verifier/</loc>
   </url>
 </urlset>

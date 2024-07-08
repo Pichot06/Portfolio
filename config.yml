@@ -28,9 +28,9 @@ languages:
           name: Home 
           url: /en/
           weight: 10
-        - identifier: aboutme
+        - identifier: about
           name: About
-          url: /en/aboutme/
+          url: /en/about/
           weight: 20
         - identifier: projets
           name: Projects
@@ -41,7 +41,7 @@ languages:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
         subtitle: "Second-year student in EEE, I am passionate about my projects and aim to become an engineer. I am eager to master modern technology to create innovative solutions for a better future."
-        imageUrl: "en/redou.jpg" # optional
+        imageUrl: "en/IMG_1576.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -55,7 +55,7 @@ languages:
         - name: "github"
           url: "https://github.com/redwanbnmnsr"
         - name: "email"
-          url: "mailto:redwan.benmansour@etu.univ-orleans.fr"
+          url: "mailto:redwan.benmansour@outlook.com"
 
   fr:
     languageName: French
@@ -68,18 +68,14 @@ languages:
           name: Accueil 
           url: /fr/
           weight: 10
-        - identifier: aboutme
+        - identifier: about
           name: À propos
-          url: /fr/aboutme/
+          url: /fr/about/
           weight: 20
         - identifier: projects
           name: Projets
           url: /fr/projects/
           weight: 30
-        - identifier: portfolio
-          name: Portfolio (BUT GEII)
-          url: /fr/Compétences/
-          weight: 40
     DateFormat: "2 January 2006"
 
     params:
@@ -87,7 +83,7 @@ languages:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
         subtitle: "Étudiant en deuxième année de GEII. Je suis passionné par mes projets et je souhaite devenir ingénieur. J'ai hâte de maîtriser les technologies modernes afin de créer des solutions innovantes pour un avenir meilleur."
-        imageUrl: "fr/redou.jpg" # optional
+        imageUrl: "fr/IMG_1576.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
