@@ -1,11 +1,11 @@
 ---
 title: "Une solution DIY de monitoring des consomation avec Home Assistant"
-date: 2024-21-07T23:15:00+07:00
+date: 2024-21-07
 category: projects
 summary: Une solution de monitoring des consomations intégré l'environnement domotique Home Assistant
 description:
 cover:
-  image: fr/projects/IMG_4717.jpg
+  image: fr/projects/image-7.png
   alt:
   caption:
   relative: true

@@ -1,6 +1,6 @@
 ---
 title: "Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA"
-date: 2024-13-05T23:15:00+07:00
+date: 2024-13-05
 category: projects
 summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concours « Mon projet en 5 min » du club EEA, les deux étudiants Roman Couet et Redwan Benmansour déposent aujourd’hui leur candidature vidéo. Leur objectif ':' remporter le concours et la dotation de 2000€.
 description:
