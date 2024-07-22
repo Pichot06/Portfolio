@@ -26,19 +26,21 @@
                 href="//localhost:1313/fr/categories/"
                 />
   </url><url>
+    <loc>//localhost:1313/fr/portfolio/S6/concevoir/</loc>
+  </url><url>
+    <loc>//localhost:1313/fr/portfolio/S6/installer/</loc>
+  </url><url>
     <loc>//localhost:1313/fr/projects/ball_and_beam/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/projects/ball_and_beam/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="//localhost:1313/fr/projects/ball_and_beam/"
-                />
+  </url><url>
+    <loc>//localhost:1313/fr/portfolio/S6/maintenir/</loc>
   </url><url>
     <loc>//localhost:1313/fr/portfolio/</loc>
+  </url><url>
+    <loc>//localhost:1313/fr/portfolio/S2/</loc>
+  </url><url>
+    <loc>//localhost:1313/fr/portfolio/S4/</loc>
+  </url><url>
+    <loc>//localhost:1313/fr/portfolio/s6/</loc>
   </url><url>
     <loc>//localhost:1313/fr/projects/</loc>
     <xhtml:link
@@ -75,5 +77,9 @@
                 hreflang="fr"
                 href="//localhost:1313/fr/tags/"
                 />
+  </url><url>
+    <loc>//localhost:1313/fr/projects/monitoring_hass/</loc>
+  </url><url>
+    <loc>//localhost:1313/fr/portfolio/S6/verifier/</loc>
   </url>
 </urlset>

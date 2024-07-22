@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Projects on Redwan</title>
+    <title>Projets on Redwan</title>
     <link>//localhost:1313/fr/projects/</link>
-    <description>Recent content in Projects on Redwan</description>
+    <description>Recent content in Projets on Redwan</description>
     <generator>Hugo -- 0.126.3</generator>
     <language>fr</language>
     <atom:link href="//localhost:1313/fr/projects/index.xml" rel="self" type="application/rss+xml" />
@@ -13,6 +13,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>//localhost:1313/fr/projects/ball_and_beam/</guid>
       <description>Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concours « Mon projet en 5 min » du club EEA, les deux étudiants Roman Couet et Redwan Benmansour déposent aujourd’hui leur candidature vidéo. Leur objectif &amp;lsquo;:&amp;rsquo; remporter le concours et la dotation de 2000€.</description>
+    </item>
+    <item>
+      <title>Une solution DIY de monitoring des consomation avec Home Assistant</title>
+      <link>//localhost:1313/fr/projects/monitoring_hass/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/projects/monitoring_hass/</guid>
+      <description>Une solution de monitoring des consomations intégré l&amp;rsquo;environnement domotique Home Assistant</description>
     </item>
   </channel>
 </rss>

@@ -14,7 +14,9 @@ params:
 # ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
+  ShowDate: true
   author: Redwan Benmansour
+  DateFormat: "January 2, 2006"
 
 languages:
   en:
@@ -76,7 +78,7 @@ languages:
           name: Projets
           url: /fr/projects/
           weight: 30
-    DateFormat: "2 January 2006"
+
 
     params:
       profileMode:
@@ -90,6 +92,7 @@ languages:
         buttons:
           - name: Télécharger le CV
             url: "/fr/CV.pdf"
+      DateFormat: "January 2, 2006"
 
       socialIcons: # optional
         - name: "linkedin"

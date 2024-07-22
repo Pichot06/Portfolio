@@ -27,16 +27,6 @@
                 />
   </url><url>
     <loc>//localhost:1313/en/projects/ball_and_beam/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="//localhost:1313/fr/projects/ball_and_beam/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/en/projects/ball_and_beam/"
-                />
   </url><url>
     <loc>//localhost:1313/en/projects/</loc>
     <xhtml:link

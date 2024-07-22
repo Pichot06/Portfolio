@@ -1,6 +1,7 @@
 ---
 title: "Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA"
-date: 2024-13-05
+date: "2024-13-05"
+url: "/fr/projects/ball_and_beam/"
 category: projects
 summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concours « Mon projet en 5 min » du club EEA, les deux étudiants Roman Couet et Redwan Benmansour déposent aujourd’hui leur candidature vidéo. Leur objectif ':' remporter le concours et la dotation de 2000€.
 description:
@@ -13,6 +14,7 @@ showtoc: true
 draft: false
 layout: single
 ---
+
 
 ### Un concours ouvert à toute formation
 L’objectif du concours est de présenter en 5 min un projet par une vidéo. Le concours est soutenu par le ministère de l’Enseignement Supérieur et de la Recherche et par ses partenaires : SICK, VEGA, Phoenix Contact, RADIOSPARES et les vélos Pi-Pop. Il se décline en deux catégories : une catégorie « BAC+1 à BAC+3 » et « BAC+4 à BAC+5 ». Le concours cible tout établis sement académique. Les formations admises sont très diverses : « Électronique », « Électrotechnique », « Automatique », « Signal et de l’Image » et « Génie Industriel ». Tous les étudiants inscrits dans une formation portant mention des précédents domaines peuvent s’y inscrire, que ce soit pour un projet académique ou personnel.
