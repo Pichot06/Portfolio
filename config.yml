@@ -2,7 +2,7 @@ baseURL: ""
 languageCode: en-us
 theme: PaperMod
 title: Redwan Benmansour
-description: test cool
+
 
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true

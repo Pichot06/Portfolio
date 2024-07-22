@@ -5,6 +5,8 @@ url: "/fr/projects/monitoring_hass/"
 category: projects
 summary: Une solution de monitoring de la consommation d'électricité et d'eau, intégrée l'environnement domotique Home Assistant
 description:
+images:
+  - image-7.png
 cover:
   image: fr/projects/image-7.png
   alt:
