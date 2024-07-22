@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>//localhost:1313/en/about/</loc>
+    <lastmod>2024-07-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="english 🇬🇧"
+                href="//localhost:1313/en/about/"
+                />
+  </url><url>
+    <loc>//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/</loc>
+    <lastmod>2024-07-09T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="english 🇬🇧"
+                href="//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/"
+                />
+  </url><url>
+    <loc>//localhost:1313/en/projects/</loc>
+    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/projects/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="english 🇬🇧"
+                href="//localhost:1313/en/projects/"
+                />
+  </url><url>
+    <loc>//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/projects/ball_and_beam/ball_and_beam/</loc>
+    <lastmod>2024-05-13T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/projects/ball_and_beam/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="english 🇬🇧"
+                href="//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/projects/ball_and_beam/ball_and_beam/"
+                />
+  </url><url>
+    <loc>//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="english 🇬🇧"
+                href="//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/categories/"
+                />
+  </url><url>
+    <loc>//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="//localhost:1313/fr/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="english 🇬🇧"
+                href="//localhost:1313/english%20%F0%9F%87%AC%F0%9F%87%A7/tags/"
+                />
+  </url>
+</urlset>

@@ -8,34 +8,36 @@ defaultContentLanguageInSubdir: true
 
 
 params:
+  displayFullLangName: true
   defaultTheme: light
   disableThemeToggle: true
   ShowReadingTime: true
-# ShowShareButtons: true
+  ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
-  DateFormat: "January 2, 2006"
+  
+  
 
 languages:
   en:
-    languageName: English
+    languageName: 🇬🇧
     weight: 10
     contentDir: content/en
     title: Redwan
     menu:
       main:
         - identifier: accueil
-          name: Home 
+          name: 🏠 Home 
           url: /en/
           weight: 10
         - identifier: about
-          name: About
+          name: 🙂 About
           url: /en/about/
           weight: 20
         - identifier: projets
-          name: Projects
+          name: 🔧 Projects
           url: /en/projects/
           weight: 30
     params:
@@ -50,7 +52,7 @@ languages:
         buttons:
           - name: Download resume
             url: "/en/CV.pdf"
-
+      DateFormat: "January 2, 2006"
       socialIcons: # optional
         - name: "linkedin"
           url: "https://www.linkedin.com/in/redwan-benmansour-48502117a/"
@@ -60,22 +62,22 @@ languages:
           url: "mailto:redwan.benmansour@outlook.com"
 
   fr:
-    languageName: French
+    languageName: 🇫🇷
     weight: 20
     title: Redwan
     contentDir: content/fr
     menu:
       main:
         - identifier: accueil
-          name: Accueil 
+          name: 🏠 Accueil 
           url: /fr/
           weight: 10
         - identifier: about
-          name: À propos
+          name: 🙂 À propos
           url: /fr/about/
           weight: 20
         - identifier: projects
-          name: Projets
+          name: 🔧 Projets
           url: /fr/projects/
           weight: 30
 
@@ -92,7 +94,7 @@ languages:
         buttons:
           - name: Télécharger le CV
             url: "/fr/CV.pdf"
-      DateFormat: "January 2, 2006"
+      DateFormat: "2 January 2006"
 
       socialIcons: # optional
         - name: "linkedin"

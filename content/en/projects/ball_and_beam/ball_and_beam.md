@@ -1,6 +1,6 @@
 ---
 title: "GEII students from the Indre IUT present their « Ball and Beam » project at the national EEA Club competition."
-date: 2024-13-05T23:15:00+07:00
+date: 2024-05-13
 category: projects
 summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. As part of the EEA Club's « My project in 5 minutes » competition, students Roman Couet and Redwan Benmansour are submitting their video entries today. Their goal:' to win the competition and the €2,000 prize.
 description:
@@ -11,6 +11,7 @@ cover:
   relative: true
 showtoc: true
 draft: false
+tocopen: true
 ---
 
 ### A competition open to all levels of education

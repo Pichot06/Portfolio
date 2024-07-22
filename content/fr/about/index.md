@@ -4,6 +4,8 @@ layout: "about"
 url: "/fr/about/"
 summary: about
 showtoc: true
+tocopen: true
+date: 2024-07-09
 ---
 
 Je m'apelle Redwan Benmansour et je suis étudiant en Génie Électrique et Informatique Industrielle (GEII). La technologie a toujours été pour moi une passion. Cette passion est nourrie à la fois par ma curiosité, mais surtout par mon envie de me rendre utile aux autres et d'améliorer la vie de chacun.

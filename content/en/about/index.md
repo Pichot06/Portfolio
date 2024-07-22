@@ -4,6 +4,8 @@ layout: "about"
 url: "/en/about/"
 summary: about
 showtoc: true
+tocopen: true
+date: 2024-07-09
 ---
 
 My name is Redwan Benmansour and I'm a student in Electrical Engineering and Industrial Computing (GEII). Technology has always been a passion for me. This passion is fueled not only by my curiosity, but above all by my desire to help others and improve people's lives.
