@@ -8,6 +8,7 @@ defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 
 
+
 params:
   displayFullLangName: true
   defaultTheme: light
@@ -18,6 +19,11 @@ params:
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
+  opengraph:
+    enable: true
+    title: "Blog - Redwan Benmansour"
+    description: "Second-year student in EEE, I am passionate about my projects and aim to become an engineer. I am eager to master modern technology to create innovative solutions for a better future."
+    image: "en/IMG_1576.jpg
   
   
 
@@ -27,7 +33,6 @@ languages:
     weight: 10
     contentDir: content/en
     title: Redwan
-    description: test
     menu:
       main:
         - identifier: accueil
@@ -67,7 +72,6 @@ languages:
     languageName: 🇫🇷
     weight: 20
     title: Redwan
-    description: test
     contentDir: content/fr
     menu:
       main:
