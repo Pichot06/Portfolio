@@ -3,6 +3,7 @@ languageCode: en-us
 theme: PaperMod
 title: Redwan Benmansour
 
+
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 
@@ -26,6 +27,7 @@ languages:
     weight: 10
     contentDir: content/en
     title: Redwan
+    description: test
     menu:
       main:
         - identifier: accueil
@@ -65,6 +67,7 @@ languages:
     languageName: 🇫🇷
     weight: 20
     title: Redwan
+    description: test
     contentDir: content/fr
     menu:
       main:
