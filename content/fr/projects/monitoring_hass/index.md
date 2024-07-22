@@ -70,7 +70,7 @@ Pour m'amuser, j'ai également intégré les données du cloud Linky pour compar
 ![Histogramme des données](image-5.png)
 *Forcément, c'est le Linky qui surestime...*
 
-Premièrement, le capteur Zigbee est très proche du capteur Linky malgré son faible prix ! Par ailleurs, les écarts sont quasi constants, ce qui fait penser à une consommation en amont non prise en compte. On serait sur une consommation environ de 25 Wh, le compteur Linky à une consommation entre 2 et 10W et serait le seul appareil en amont. Cet écart est alors une erreur de calibrage du capteur en offset (constant), soit un appareil non identifié dans mon installation électrique. Le mystère reste à ce jour non résolu... (gros doutes sur ce capteur tout de même).
+Premièrement, le capteur Zigbee est très proche du capteur Linky malgré son faible prix ! Par ailleurs, les écarts sont quasi constants, ce qui fait penser à une consommation en amont non prise en compte. On serait sur une consommation environ de 25 W, le compteur Linky à une consommation entre 2 et 10W et serait le seul appareil en amont. Cet écart est alors soit une erreur de calibrage du capteur en offset (constant), soit un appareil non identifié dans mon installation électrique. Le mystère reste à ce jour non résolu... (gros doutes sur ce capteur tout de même).
 
 
 ## Monitoring de la consomation d'eau
