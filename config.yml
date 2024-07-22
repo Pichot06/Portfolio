@@ -2,7 +2,7 @@ baseURL: ""
 languageCode: en-us
 theme: PaperMod
 title: Redwan Benmansour
-
+description: test cool
 
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
@@ -19,8 +19,6 @@ params:
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
-  env: production
-  description: "test2"
 
 languages:
   en:
@@ -62,13 +60,11 @@ languages:
           url: "https://github.com/redwanbnmnsr"
         - name: "email"
           url: "mailto:redwan.benmansour@outlook.com"
-      description: "test0"
 
   fr:
     languageName: 🇫🇷
     weight: 20
     title: Redwan
-    description: "test1"
     contentDir: content/fr
     menu:
       main:
