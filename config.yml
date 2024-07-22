@@ -19,6 +19,7 @@ params:
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
+  images: ["fr/IMG_1576.jpg"]
 
 languages:
   en:

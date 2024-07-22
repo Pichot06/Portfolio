@@ -4,6 +4,11 @@
     <title>Categories on Redwan</title>
     <link>//localhost:1313/fr/categories/</link>
     <description>Recent content in Categories on Redwan</description>
+    <image>
+      <title>Redwan</title>
+      <url>//localhost:1313/fr/IMG_1576.jpg</url>
+      <link>//localhost:1313/fr/IMG_1576.jpg</link>
+    </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>fr</language>
     <atom:link href="//localhost:1313/fr/categories/index.xml" rel="self" type="application/rss+xml" />
