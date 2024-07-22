@@ -77,7 +77,7 @@ Premièrement, le capteur Zigbee est très proche du capteur Linky malgré son f
 ### Comment faire ?
 Le monitoring de la consommation électrique est simple et non intrusif. Aucun câblage n'a dû être modifié. Le monitoring de la consommation de l'eau est beaucoup plus compliqué. Bien qu'il existe des appareils le permettant, il est indispensable de modifier la tuyauterie, et mes compétences de plomberie sont quasi nulles. Le même problème réside pour le monitoring de la consommation du gaz.
 
-Alors, il existe des compteurs communicants comme le Linky. Il est soit possible d'installer un mod comme le module TIC, ou soit d'utiliser directement l'API cloud des fournisseurs. Cependant, j'ai trouvé une solution encore plus simple pour mon cas de figure, et cela part de la découverte d'un réseau Wi-Fi bien étrange...
+Alors, il existe des compteurs communicants comme le Linky, comme le compteur Gazpar de GRDF par exmple. Il est soit possible d'installer un mod comme le module TIC, ou soit d'utiliser directement l'API cloud des fournisseurs. Cependant, j'ai trouvé une solution encore plus simple pour mon cas de figure, et cela part de la découverte d'un réseau Wi-Fi bien étrange...
 
 ### Un réseau WI-FI bien étrange...
 En me baladant sur les plages et les canaux Zigbee (qui ne fait pas ça ?), j'ai remarqué un réseau bien étrange. Il s'appelait BWT@7642 et se trouvait particulièrement proche. Une recherche Google m'indique que BWT est un constructeur de produits de traitement de l'eau ; je fais le lien immédiatement avec mon adoucisseur. Celui-ci est bien de la marque BWT mais que fait un réseau Wi-Fi sur cette machine ? 
@@ -108,7 +108,7 @@ Toutes les secondes, un script envoie une requête get vers un lien (http://192.
 ```
 On remarque qu'il y a plus d'informations que sur la page, notamment la consommation d'eau. Sachant que toute l'eau passe par l'adoucisseur, on aura une information directe sur la consommation d'eau au domicile.
 
-Par ailleurs, cette donnée s'agit bien du volume total et non du débit actuel. Pour faire l'analogie, sur la consommation électrique, on avait la puissance instantanée et non l'énergie consommée. Cela permettra, cette fois-ci, de l'intégrer plus facilement à l'onglet énergie de Home Assistant.
+Par ailleurs, cette donnée s'agit bien du volume total et non du débit actuel. Pour faire l'analogie, sur la consommation électrique, on avait la puissance instantanée et non l'énergie consommée, la c'est l'inverse, on a l'eau consommée et non le débit. Cela permettra, cette fois-ci, de l'intégrer plus facilement à l'onglet énergie de Home Assistant.
 
 ### Configuration Home Assistant
 
