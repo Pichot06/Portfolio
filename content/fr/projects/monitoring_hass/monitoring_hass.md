@@ -31,7 +31,7 @@ La freebox ultra est la nouvelle box de free équipée du SoC Qualcomm IPQ 9574,
 ### Installation
 Un atout considérable d'Home Assistant est la gestion des consomations énergétiques et des installation solaires. A partir de quelques données, il est possible d'établir tout un dashboard de monitoring (voir https://www.home-assistant.io/home-energy-management/). Dans un premier temps je souhaite me focaliser sur la consomation électrique. Pour cela j'ai trois solutions :
 
- - Utilisation du compteur Linky par l'intérmédiaire de l'API Enedis (Cloud, voir https://github.com/bokub/ha-linky)
+ - Utilisation du compteur Linky (compteur comuniquant du distributeur Enedis) par l'intérmédiaire de l'API Enedis (Cloud, voir https://github.com/bokub/ha-linky)
  - Utilisation du compteur Linky local à l'aide d'un module TIC
  - Installation d'un compteur Zigbee suplémentaire
 
