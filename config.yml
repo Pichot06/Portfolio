@@ -19,11 +19,8 @@ params:
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
-  description: Text about my cool site
-  images:
-  - en/IMG_1576.jpg
-  
-  
+  env: production
+  description: "test2"
 
 languages:
   en:
@@ -65,11 +62,13 @@ languages:
           url: "https://github.com/redwanbnmnsr"
         - name: "email"
           url: "mailto:redwan.benmansour@outlook.com"
+      description: "test0"
 
   fr:
     languageName: 🇫🇷
     weight: 20
     title: Redwan
+    description: "test1"
     contentDir: content/fr
     menu:
       main:
