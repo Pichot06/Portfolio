@@ -2,7 +2,7 @@
 title: "À propos"
 layout: "about"
 url: "/fr/about/"
-summary: about
+summary: À propos
 showtoc: true
 tocopen: true
 date: 2024-07-09

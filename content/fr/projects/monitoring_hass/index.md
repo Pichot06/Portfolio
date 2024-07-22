@@ -1,11 +1,10 @@
 ---
 title: "Une solution DIY de monitoring des consommations avec Home Assistant"
-date: "2024-07-22"
+date: 2024-07-22
 url: "/fr/projects/monitoring_hass/"
 category: projects
 summary: Une solution de monitoring de la consommation d'électricité et d'eau, intégrée l'environnement domotique Home Assistant
 description:
-images: ["image-7.png"]
 cover:
   image: image-7.png
   alt:
@@ -15,6 +14,7 @@ showtoc: true
 draft: false
 layout: single
 tocopen: true
+hidemeta: false
 ---
 
 ## Home Assistant, un indispensable de la domotique ?

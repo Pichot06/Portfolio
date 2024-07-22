@@ -2,7 +2,7 @@
 title: "About"
 layout: "about"
 url: "/en/about/"
-summary: about
+summary: About
 showtoc: true
 tocopen: true
 date: 2024-07-09

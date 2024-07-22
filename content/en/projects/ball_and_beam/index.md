@@ -4,7 +4,6 @@ date: 2024-05-13
 category: projects
 summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. As part of the EEA Club's « My project in 5 minutes » competition, students Roman Couet and Redwan Benmansour are submitting their video entries today. Their goal:' to win the competition and the €2,000 prize.
 description:
-images: ["IMG_4717.jpg"]
 cover:
   image: IMG_4717.jpg
   alt:
