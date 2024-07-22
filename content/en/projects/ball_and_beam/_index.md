@@ -6,7 +6,7 @@ summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. As part of the EEA Club
 description:
 images: ["IMG_4717.jpg"]
 cover:
-  image: fr/projects/IMG_4717.jpg
+  image: IMG_4717.jpg
   alt:
   caption:
   relative: true

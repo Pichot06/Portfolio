@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>🔧 Projets on Redwan</title>
-    <link>//localhost:1313/fr/projects/</link>
-    <description>Recent content in 🔧 Projets on Redwan</description>
+    <title>Une solution DIY de monitoring des consommations avec Home Assistant on Redwan</title>
+    <link>//localhost:1313/fr/projects/monitoring_hass/</link>
+    <description>Recent content in Une solution DIY de monitoring des consommations avec Home Assistant on Redwan</description>
     <image>
       <title>Redwan</title>
       <url>//localhost:1313/IMG_1576.jpg</url>
@@ -12,6 +12,6 @@
     <generator>Hugo -- 0.126.3</generator>
     <language>fr</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="//localhost:1313/fr/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/fr/projects/monitoring_hass/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

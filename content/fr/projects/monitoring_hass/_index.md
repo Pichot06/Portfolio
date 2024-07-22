@@ -7,7 +7,7 @@ summary: Une solution de monitoring de la consommation d'électricité et d'eau,
 description:
 images: ["image-7.png"]
 cover:
-  image: fr/projects/image-7.png
+  image: image-7.png
   alt:
   caption:
   relative: true

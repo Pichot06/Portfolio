@@ -7,7 +7,7 @@ summary: Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concou
 images: ["IMG_4717.jpg"]
 description:
 cover:
-  image: fr/projects/IMG_4717.jpg
+  image: IMG_4717.jpg
   alt:
   caption:
   relative: true
