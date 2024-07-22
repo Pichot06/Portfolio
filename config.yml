@@ -19,7 +19,7 @@ params:
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
-  images: ["fr/IMG_1576.jpg"]
+  images: ["IMG_1576.jpg"]
 
 languages:
   en:
@@ -42,11 +42,12 @@ languages:
           url: /en/projects/
           weight: 30
     params:
+      images: ["IMG_1576.jpg"]
       profileMode:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
         subtitle: "Second-year student in EEE, I am passionate about my projects and aim to become an engineer. I am eager to master modern technology to create innovative solutions for a better future."
-        imageUrl: "en/IMG_1576.jpg" # optional
+        imageUrl: "IMG_1576.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -84,11 +85,12 @@ languages:
 
 
     params:
+      images: ["IMG_1576.jpg"]
       profileMode:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
         subtitle: "Étudiant en deuxième année de GEII. Je suis passionné par mes projets et je souhaite devenir ingénieur. J'ai hâte de maîtriser les technologies modernes afin de créer des solutions innovantes pour un avenir meilleur."
-        imageUrl: "fr/IMG_1576.jpg" # optional
+        imageUrl: "IMG_1576.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -96,6 +98,7 @@ languages:
           - name: Télécharger le CV
             url: "/fr/CV.pdf"
       DateFormat: "2 January 2006"
+
 
       socialIcons: # optional
         - name: "linkedin"
