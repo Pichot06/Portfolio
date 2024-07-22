@@ -11,7 +11,21 @@
     </image>
     <generator>Hugo -- 0.126.3</generator>
     <language>fr</language>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Mon, 22 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/fr/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Une solution DIY de monitoring des consommations avec Home Assistant</title>
+      <link>//localhost:1313/fr/projects/monitoring_hass/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/projects/monitoring_hass/</guid>
+      <description>Une solution de monitoring de la consommation d&amp;rsquo;électricité et d&amp;rsquo;eau, intégrée l&amp;rsquo;environnement domotique Home Assistant</description>
+    </item>
+    <item>
+      <title>Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA</title>
+      <link>//localhost:1313/fr/projects/ball_and_beam/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/fr/projects/ball_and_beam/</guid>
+      <description>Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concours « Mon projet en 5 min » du club EEA, les deux étudiants Roman Couet et Redwan Benmansour déposent aujourd’hui leur candidature vidéo. Leur objectif &amp;lsquo;:&amp;rsquo; remporter le concours et la dotation de 2000€.</description>
+    </item>
   </channel>
 </rss>
