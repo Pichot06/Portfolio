@@ -8,7 +8,7 @@ tocopen: true
 date: 2024-07-09
 ---
 
-Je m'apelle Redwan Benmansour et je suis étudiant en Génie Électrique et Informatique Industrielle (GEII). La technologie a toujours été pour moi une passion. Cette passion est nourrie à la fois par ma curiosité, mais surtout par mon envie de me rendre utile aux autres et d'améliorer la vie de chacun.
+Je m'appelle Redwan Benmansour et je suis étudiant en Génie Électrique et Informatique Industrielle (GEII). La technologie a toujours été pour moi une passion. Cette passion est nourrie à la fois par ma curiosité, mais surtout par mon envie de me rendre utile aux autres et d'améliorer la vie de chacun.
 
 ### IUT de l'Indre : Site de Châteauroux
 J'ai grandi à Châteauroux, une petite ville dans laquelle j'ai eu la chance de trouver l'IUT de l'Indre. J'ai connu cet IUT depuis tout petit, j'y allais tous les ans lors de la fête de la science. J'y découvrais les projets et les innovations des étudiants et des enseignants-chercheurs du département de GEII. 
