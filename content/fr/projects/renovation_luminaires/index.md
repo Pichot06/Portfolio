@@ -26,4 +26,4 @@ Le rendu final est ce document d'une quarantaine de pages ainsi qu'une réductio
 
 ## Document
 
-{{< pdfReader "Projet_Luminaires.pdf" >}}
+{{< pdfReader "Renovation_Luminaires.pdf" >}}
