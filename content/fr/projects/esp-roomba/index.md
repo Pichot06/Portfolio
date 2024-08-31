@@ -67,6 +67,8 @@ ESPHome est un framework qui permet de programmer des microcontrôleurs ESP trè
 Afin d'installer ESPHome sur Home Assistant, je me rends dans **Modules complémentaires / Store / ESPHome**. Une fois le module installé, on arrive sur une page permettant d'ajouter un appareil avec **New Device**. À partir de là, tout est guidé. Il suffit d'installer ESPHome ainsi qu'une configuration Wi-Fi sur un microcontrolleur branché en USB. Une fois cela, fait-il n'y a plus besoin de brancher l'appareil et les mises à jour peuvent se faire en OTA (Over The Air).
 
 Le fichier de configuration permet de directement intégrer du code sur l'appareil et de faire le lien avec les entités Home Assistant. Mon premier fichier de configuration utilise la fonction UART de ESPHome afin de communiquer avec le robot :
+
+### Première config : Commande seulement
 ```yaml
 # Config ESPHome
 esphome:
@@ -134,6 +136,7 @@ switch:
 ```
 Cette configuration fonctionne, mais aucun retour d'information du robot n'est disponible. Il est possible d'écrire un bout de code pour récupérer chaque information, mais par chance, cela a déjà été fait par la communauté ESPHome (voir https://community.home-assistant.io/t/add-wifi-to-an-older-roomba/23282 ). Il me suffit de combiner mon code et celui de ce repo github sur la branche UART ( https://github.com/davidecavestro/ESPHomeRoombaComponent/tree/uart ) afin d'à la fois avoir les capteurs, mais aussi les commandes ! 
 
+### Deuxième config : Commande et capteurs
 ```yaml
 # Config ESPHomes et Bibliothèques
 esphome:
