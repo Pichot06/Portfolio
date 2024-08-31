@@ -387,6 +387,11 @@ h6:hover .anchor {
     width: 50%;
 }
 
+.highlight {
+    max-height: 450px;
+    overflow-y: auto;
+}
+
 .paginav span:hover:not(.title) {
     box-shadow: 0 1px 0;
 }
