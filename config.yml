@@ -27,7 +27,7 @@ languages:
     languageName: 🇬🇧
     weight: 10
     contentDir: content/en
-    title: Redwan
+    title: Redwan's Blog
     menu:
       main:
         - identifier: accueil
@@ -67,7 +67,7 @@ languages:
   fr:
     languageName: 🇫🇷
     weight: 20
-    title: Redwan
+    title: Blog de Redwan
     contentDir: content/fr
     menu:
       main:
