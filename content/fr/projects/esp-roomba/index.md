@@ -1,5 +1,5 @@
 ---
-title: "Transformer un ancien aspirateur robot Roomba en un robot intelligent"
+title: "Connecter un ancien aspirateur robot Roomba sur une plateforme domotique"
 date: 2024-08-31
 url: "/fr/projects/esp-roomba/"
 category: projects
