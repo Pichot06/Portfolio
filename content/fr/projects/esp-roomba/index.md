@@ -154,7 +154,7 @@ substitutions:
   friendly_name: "Roomba"
   # BRC pin, RX pin, TX pin, polling interval in milliseconds
   # Pin 3 is labeled rx on the wemos d1 mini, 1 is labeled TX We don't use the hardware UART but we're using its pins!
-  init: 'RoombaComponent::instance(21, id(uart_bus), 8000, true);'
+  init: 'RoombaComponent::instance(21, id(uart_bus), 8000, false);'
 
 # Pour des raisons de sécurité les config Wifi et API on été supprimées
 
