@@ -26,4 +26,6 @@ Le rendu final est ce document d'une quarantaine de pages ainsi qu'une réductio
 
 ## Document
 
+{{< download_pdf file="Renovation_Luminaires.pdf" text="Télécharger le PDF" >}}
+
 {{< pdfReader "Renovation_Luminaires.pdf" >}}
