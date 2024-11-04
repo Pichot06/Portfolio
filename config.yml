@@ -54,7 +54,7 @@ languages:
         imageHeight: 120 # custom size
         buttons:
           - name: Download resume
-            url: "/en/CV.pdf"
+            url: "/en/CV_EN_Redwan_BENMANSOUR.pdf"
       DateFormat: "January 2, 2006"
       socialIcons: # optional
         - name: "linkedin"
@@ -97,7 +97,7 @@ languages:
         imageHeight: 120 # custom size
         buttons:
           - name: Télécharger le CV
-            url: "/fr/CV.pdf"
+            url: "/fr/CV_FR_Redwan_BENMANSOUR.pdf"
       DateFormat: "2 January 2006"
 
 
