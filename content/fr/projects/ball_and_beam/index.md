@@ -1,5 +1,5 @@
 ---
-title: "Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA"
+title: "Projet universitaire Bac+2 : Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA"
 date: 2024-05-13
 url: "/fr/projects/ball_and_beam/"
 category: projects
