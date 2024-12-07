@@ -26,6 +26,8 @@ Le projet de banc de test de kart électrique doit répondre à un besoin de la 
 
 Pour cela, la conception d'une maquette de formation sous la forme d'un banc de test a été proposée. Elle devra intégrer des techniques d'asservissement de couple par des variateurs, ainsi que l'injection de l'énergie de freinage sur le réseau. Cette énergie était auparavant dissipée dans des résistances de freinages. C'est le même principe du freinage régénératif des voitures hybrides. Dans un contexte industriel, sur de plus larges machines, la réduction du cout est non négligeable. L'objectif est de présenter cet aspect aux étudiants grâce à cette maquette.
 
+Ce projet est réalisé sur les deux années BAC+2 et BAC+3 de BUT GEII avec 5 étudiants : Nathan Giguelay, Axel Laboute, Corentin Da Silva, Lyse Dorianne Itoua-Poto et Redwan Benmansour. 
+
 ## Principe de fonctionnement
 Le banc de test consiste à coupler mécaniquement un moteur au kart afin d'imposer une charge active. L'objectif est de pouvoir simuler des scénarios de montée sur celui-ci. D'un point de vue éducatif, cela permet d'à la fois aborder l'aspect électrotechnique, mais aussi celui de gestion de l'énergie et d'injection réseau. La synoptique de principe est la suivante :
 
