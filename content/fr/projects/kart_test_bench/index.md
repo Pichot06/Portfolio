@@ -1,7 +1,7 @@
 ---
 title: "Projet universitaire Bac+3 (partie 1) : Banc de test pour un kart électrique"
 date: 2024-12-07
-url: "/fr/projects/kart_test_bench_1/"
+url: "/fr/projects/kart_test_bench/"
 category: projects
 summary: Conception d'une maquette éducative de banc de test pour un kart électrique
 summary:
