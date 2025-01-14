@@ -47,7 +47,7 @@ languages:
       profileMode:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
-        subtitle: "Second-year student in EEE, I am passionate about my projects and aim to become an engineer. I am eager to master modern technology to create innovative solutions for a better future."
+        subtitle: "Third-year student in EEE, I'm looking for an engineering school in the fields of electrical energy or IoT."
         imageUrl: "IMG_1576.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
@@ -90,7 +90,7 @@ languages:
       profileMode:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
-        subtitle: "Étudiant en deuxième année de GEII. Je suis passionné par mes projets et je souhaite devenir ingénieur. J'ai hâte de maîtriser les technologies modernes afin de créer des solutions innovantes pour un avenir meilleur."
+        subtitle: "Étudiant en troisème année de BUT GEII, je suis à la recherche d'une école d'ingénieur dans les domaines de l'énergie électrique ou de l'IoT. "
         imageUrl: "IMG_1576.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
@@ -103,7 +103,7 @@ languages:
 
       socialIcons: # optional
         - name: "linkedin"
-          url: "https://www.linkedin.com/in/redwan-benmansour-48502117a/"
+          url: "https://www.linkedin.com/in/redwan-benmansour/"
         - name: "github"
           url: "https://github.com/redwanbnmnsr"
         - name: "email"
