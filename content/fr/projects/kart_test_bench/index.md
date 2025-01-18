@@ -108,4 +108,4 @@ Nous avons reçu la semaine dernière le châssis et l'intégralité des composa
 - La mise en route avec le client et résolution des problèmes
 - La rédaction du rapport et des documentations
 
-Le projet devra être livré pour mi-janvier 2025. Une deuxième partie avec la publication du rapport permettra plus de détails sur l'aspect technique :)
+Le projet devra être livré pour mi-janvier 2025. Une deuxième partie avec la publication du rapport permettra plus de détails sur l'aspect technique 
