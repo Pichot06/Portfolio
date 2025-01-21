@@ -15,6 +15,8 @@ draft: false
 layout: single
 tocopen: true
 hidemeta: false
+tags: ["Domotique","ESP Home","Home Assistant", "Roomba", "projet","GEII"]
+keywords: ["Domotique","ESP Home","Home Assistant", "Roomba", "projet","GEII"]
 ---
 
 

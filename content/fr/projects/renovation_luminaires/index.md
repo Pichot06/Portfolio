@@ -3,7 +3,7 @@ title: "Rénovation des éclairages de l'IUT de l'Indre"
 date: 2024-02-20
 url: "/fr/projects/renovation_luminaires/"
 category: projects
-summary: Dans le cadre de notre formation en Génie Électrique et Informatique Industrielle spécialitée Environement et Maitrise de l'Énergie, nous avons réalisé un projet de rénovation énergétique des luminaires de l'IUT de l'Indre site de Châteauroux.
+summary: Dans le cadre de notre formation en Génie Électrique et Informatique Industrielle spécialitée Électricité et Maitrise de l'Énergie, nous avons réalisé un projet de rénovation énergétique des luminaires de l'IUT de l'Indre site de Châteauroux.
 description:
 cover:
   image: simulation.png
@@ -16,6 +16,8 @@ layout: single
 tocopen: true
 hidemeta: false
 author: Romain Jeanne, Corentin Da Silva, Sidney Veleda, Roman Couet, Karlens Bernard, Redwan Benmansour
+tags: ["énergie", "Rénovation", "luminaire", "projet","GEII","IUT de l'Indre"]
+tags: ["énergie", "Rénovation", "luminaire", "projet","GEII","IUT de l'Indre"]
 ---
 ## Contexte
 Dans le cadre de notre formation en Génie Électrique et Informatique Industrielle spécialité Environnement et Maitrise de l'Énergie, nous avons réalisé un projet de rénovation énergétique des luminaires de l'IUT de l'Indre site de Châteauroux. 

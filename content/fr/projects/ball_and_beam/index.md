@@ -15,6 +15,8 @@ draft: false
 layout: single
 tocopen: true
 hidemeta: false
+tags: ["Ball and beam", "Concours", "EEA", "projet universitaire","GEII","IUT de l'Indre"]
+keywords: ["Ball and beam", "Concours", "EEA", "projet universitaire","GEII","IUT de l'Indre"]
 ---
 
 

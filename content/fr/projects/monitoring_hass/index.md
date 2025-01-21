@@ -15,6 +15,8 @@ draft: false
 layout: single
 tocopen: true
 hidemeta: false
+tags: ["Domotique","énergie","Home Assistant", "monitoring", "projet","GEII"]
+keywords: ["Domotique","énergie","Home Assistant", "monitoring", "projet","GEII"]
 ---
 
 ## Home Assistant, un indispensable de la domotique ?
