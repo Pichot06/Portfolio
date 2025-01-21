@@ -85,7 +85,6 @@ On observe sur cette vidéo que lorsqu'on augmente la charge, la vitesse du kart
 {{< figure src="15.png" align="center" width="450px">}}
 *Caractéristique du moteur du kart*
 
-Cette caractéristique est typique d'une machine synchrone.
 
 ## Essai en mode IHM
 
