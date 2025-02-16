@@ -20,7 +20,7 @@ params:
   ShowBreadCrumbs: true
   ShowDate: true
   author: Redwan Benmansour
-  images: ["IMG_1576.jpg"]
+  images: ["1739734917588.jpg"]
 
 
 languages:
@@ -44,12 +44,12 @@ languages:
           url: /en/projects/
           weight: 30
     params:
-      images: ["IMG_1576.jpg"]
+      images: ["1739734917588.jpg"]
       profileMode:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
         subtitle: "Third-year student in EEE, I'm looking for an engineering school in the fields of electrical energy or IoT."
-        imageUrl: "IMG_1576.jpg" # optional
+        imageUrl: "1739734917588.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
@@ -87,12 +87,12 @@ languages:
 
 
     params:
-      images: ["IMG_1576.jpg"]
+      images: ["1739734917588.jpg"]
       profileMode:
         enabled: true
         title: "Redwan Benmansour" # optional default will be site title
         subtitle: "Étudiant en troisème année de BUT GEII, je suis à la recherche d'une école d'ingénieur dans les domaines de l'énergie électrique ou de l'IoT. "
-        imageUrl: "IMG_1576.jpg" # optional
+        imageUrl: "1739734917588.jpg" # optional
         imageTitle: "Redwan Benmansour" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
