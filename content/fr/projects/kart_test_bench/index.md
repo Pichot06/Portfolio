@@ -14,7 +14,7 @@ cover:
 showtoc: true
 draft: false
 layout: single
-author: Nathan Giguelay, Axel Laboute, Corentin Da Silva, Lyse Dorianne Itoua-Poto, Redwan Benmansour
+author: Redwan Benmansour, Corentin Da Silva, Nathan Giguelay, Lyse Dorianne Itoua-Poto, Axel Laboute
 tocopen: true
 hidemeta: false
 tags: ["kart électrique", "banc de test", "installation", "mise en route", "projet universitaire","GEII","IUT de l'Indre"]

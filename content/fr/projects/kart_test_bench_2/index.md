@@ -13,7 +13,7 @@ cover:
 showtoc: true
 draft: false
 layout: single
-author: Redwan Benmansour, Nathan Giguelay, Axel Laboute, Corentin Da Silva, Lyse Dorianne Itoua-Poto
+author: Redwan Benmansour, Corentin Da Silva, Nathan Giguelay, Lyse Dorianne Itoua-Poto, Axel Laboute
 tocopen: true
 hidemeta: false
 tags: ["kart électrique", "banc de test", "installation", "mise en route", "projet universitaire","GEII","IUT de l'Indre"]
@@ -24,7 +24,7 @@ Cet article est la deuxième partie d'une série sur notre projet universitaire 
 
 https://redwanbnmnsr.github.io/fr/projects/kart_test_bench/
 
-Les informations de cet article sont simplifiées et vulgarisées. Le rapport de projet complet sera disponible le 13 février.
+Les informations de cet article sont simplifiées et vulgarisées. Le rapport de projet complet sera disponible le 20 février.
 
 # Installation 
 ## Câblage
