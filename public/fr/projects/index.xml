@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>🔧 Projets on Alexandre</title>
+    <link>http://localhost:1313/fr/projects/</link>
+    <description>Recent content in 🔧 Projets on Alexandre</description>
+    <image>
+      <title>Alexandre</title>
+      <url>http://localhost:1313/1739734917588.jpg</url>
+      <link>http://localhost:1313/1739734917588.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>fr</language>
+    <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projet universitaire Bac&#43;3 (partie 3) : Rapport de projet</title>
+      <link>http://localhost:1313/fr/projects/kart_test_bench_3/</link>
+      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/kart_test_bench_3/</guid>
+      <description>Publication du rapport de projet</description>
+    </item>
+    <item>
+      <title>Projet universitaire Bac&#43;3 (partie 2) : Installation et mise en route</title>
+      <link>http://localhost:1313/fr/projects/kart_test_bench_2/</link>
+      <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/kart_test_bench_2/</guid>
+      <description>Description des étapes de l&amp;rsquo;installation et de la mise en route du banc de test</description>
+    </item>
+    <item>
+      <title>Projet universitaire Bac&#43;3 (partie 1) : Banc de test pour un kart électrique</title>
+      <link>http://localhost:1313/fr/projects/kart_test_bench/</link>
+      <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/kart_test_bench/</guid>
+      <description>&lt;h2 id=&#34;objectif-du-projet&#34;&gt;Objectif du projet&lt;/h2&gt;
+&lt;p&gt;Les projets universitaires dans la formation GEII sont proposés sur la formation initiale afin d&amp;rsquo;apporter, en plus des stages, un aspect professionnalisant et un ensemble de compétences. Parmi ces compétences, on retrouve spécialement la gestion de projet et le travail d&amp;rsquo;équipe. L&amp;rsquo;objectif de ces projets est également de fournir un livrable aux clients pouvant être aussi bien la structure de l&amp;rsquo;IUT que des entreprises partenaires.&lt;/p&gt;
+&lt;p&gt;Le projet de banc de test de kart électrique doit répondre à un besoin de la formation GEII de l&amp;rsquo;IUT de l&amp;rsquo;Indre. En effet, les nouveautés technologiques doivent être suivies afin d&amp;rsquo;adapter au mieux la formation au monde du travail. Les enjeux de maitrise énergétique en sont tout aussi importants, surtout dans la spécialité Électricité et Maitrise de l&amp;rsquo;Énergie du BUT GEII. Afin d&amp;rsquo;être dans cette continuité de logique de développement durable, ce projet doit revaloriser l&amp;rsquo;acquisition du kart électrique, acheté par la formation, il y a une dizaine d&amp;rsquo;années, pour un projet universitaire.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concours de Robotique Cachan deuxième</title>
+      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concours de Robotique Cachan deuxième</title>
+      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concours de Robotique Cachan deuxième</title>
+      <link>http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Concours de Robotique Cachan deuxième</title>
+      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Connecter un ancien aspirateur robot Roomba sur une plateforme domotique</title>
+      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drone</title>
+      <link>http://localhost:1313/fr/projects/Drone/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/Drone/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Une solution DIY de monitoring des consommations avec Home Assistant</title>
+      <link>http://localhost:1313/fr/projects/monitoring_hass/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/monitoring_hass/</guid>
+      <description>Une solution de monitoring de la consommation d&amp;rsquo;électricité et d&amp;rsquo;eau, intégrée l&amp;rsquo;environnement domotique Home Assistant</description>
+    </item>
+    <item>
+      <title>Rénovation des éclairages de l&#39;IUT de l&#39;Indre</title>
+      <link>http://localhost:1313/fr/projects/renovation_luminaires/</link>
+      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/renovation_luminaires/</guid>
+      <description>Dans le cadre de notre formation en Génie Électrique et Informatique Industrielle spécialitée Électricité et Maitrise de l&amp;rsquo;Énergie, nous avons réalisé un projet de rénovation énergétique des luminaires de l&amp;rsquo;IUT de l&amp;rsquo;Indre site de Châteauroux.</description>
+    </item>
+  </channel>
+</rss>

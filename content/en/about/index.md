@@ -10,13 +10,8 @@ date: 2024-07-09
 
 My name is Redwan Benmansour and I'm a student in Electrical Engineering and Industrial Computing (GEII). 
 
-### IUT de l'Indre : Châteauroux site
-I grew up in Châteauroux, a small town where I was lucky enough to find the IUT de l'Indre. I've known about this IUT since I was a kid, going there every year for the Fête de la Science. I would discover the projects and innovations of the students and teacher-researchers in the GEII department. 
-
-![Photo 1](IMG_8756.png)
-*Myself accompanied by my mother to the "fête de la science" on October 13, 2012.*
-
-The proximity of the IUT de l'Indre was a considerable advantage, both because of the small size of the classes and the closeness of the teaching staff. Thanks to this, I was able to develop my skills and become more professional through ambitious group projects. Above all, the IUT de l'Indre is a place where all three years of GEII students help each other and work together. It's in this spirit that I'd like to continue my higher education.
+### IUT de Nice
+Je m’appelle Alexandre Pichot et j’ai suivi un DUT GEII à l’IUT de Nice. Passionné depuis longtemps par l’électricité, l’automatisation et l’informatique industrielle, ce cursus m’a permis d’acquérir des bases solides et de m’épanouir à travers des projets concrets et collaboratifs.
 
 ### A curriculum in line with my vision of the world
 Today's environmental issues are a huge challenge facing our generation. The EME program enables me to specialize in renewable energies and techniques for improving energy efficiency. Various projects enable us to develop our skills. These have included the installation of a photovoltaic shade structure and the study of an active filtering system. We're learning how to develop and install these systems, based on real-life cases and using a wide range of professional equipment. You'll find highlights of these projects on this blog.

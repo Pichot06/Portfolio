@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="fr" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="noindex, nofollow">
+<title>Concours de Robotique Cachan deuxième | Alexandre</title>
+<meta name="keywords" content="projet, GEII">
+<meta name="description" content="Intégrer de la domotique dans un produit vieux de 16 ans
+Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.">
+<meta name="author" content="Alexandre Pichot">
+<link rel="canonical" href="http://localhost:1313/fr/projects/CXoncours-robot-cachan-V/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.9f20f4d06b66d242482365943742c14b9a72e5be26f427cc1511376c6804e433.css" integrity="sha256-nyD00Gtm0kJII2WUN0LBS5py5b4m9CfMFRE3bGgE5DM=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="fr" href="http://localhost:1313/fr/projects/CXoncours-robot-cachan-V/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+</head>
+
+<body class="" id="top">
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/fr/" accesskey="h" title="Alexandre (Alt + H)">Alexandre</a>
+            <div class="logo-switches">
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/fr/" title="🏠 Accueil">
+                    <span>🏠 Accueil</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/fr/about/" title="🙂 À propos">
+                    <span>🙂 À propos</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/fr/projects/" title="🔧 Projets">
+                    <span>🔧 Projets</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/fr/">Accueil</a>&nbsp;»&nbsp;<a href="http://localhost:1313/fr/projects/">🔧 Projets</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Concours de Robotique Cachan deuxième
+    </h1>
+    <div class="post-meta"><span title='2024-08-31 00:00:00 +0000 UTC'>31 août 2024</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Alexandre Pichot
+
+</div>
+  </header> 
+<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/image2-1.jpeg" alt="">
+        
+</figure><aside id="toc-container" class="toc-container wide">
+    <div class="toc">
+        <details  open>
+            <summary accesskey="c" title="(Alt + C)">
+                <span class="details">Table des matières</span>
+            </summary>
+
+            <div class="inner"><ul>
+                    <li>
+                        <a href="#int%c3%a9grer-de-la-domotique-dans-un-produit-vieux-de-16-ans" aria-label="Intégrer de la domotique dans un produit vieux de 16 ans">Intégrer de la domotique dans un produit vieux de 16 ans</a></li>
+                    <li>
+                        <a href="#choix-du-microcontrolleur-et-sch%c3%a9ma-de-cabl%c3%a2ge" aria-label="Choix du microcontrolleur et schéma de cablâge">Choix du microcontrolleur et schéma de cablâge</a></li>
+                    <li>
+                        <a href="#debug-et-tests-communication-s%c3%a9rie" aria-label="Debug et tests communication série">Debug et tests communication série</a></li>
+                    <li>
+                        <a href="#esphome-un-framework-simple-et-puissant" aria-label="ESPHome, un framework simple et puissant">ESPHome, un framework simple et puissant</a><ul>
+                            
+                    <li>
+                        <a href="#premi%c3%a8re-config--commande-seulement" aria-label="Première config : Commande seulement">Première config : Commande seulement</a></li>
+                    <li>
+                        <a href="#deuxi%c3%a8me-config--commande-et-capteurs" aria-label="Deuxième config : Commande et capteurs">Deuxième config : Commande et capteurs</a></li></ul>
+                    </li>
+                    <li>
+                        <a href="#template-home-assistant-et-assistants-vocaux" aria-label="Template Home Assistant et Assistants vocaux">Template Home Assistant et Assistants vocaux</a>
+                    </li>
+                </ul>
+            </div>
+        </details>
+    </div>
+</aside>
+<script>
+    let activeElement;
+    let elements;
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+         
+         activeElement = elements[0];
+         const id = encodeURI(activeElement.getAttribute('id')).toLowerCase();
+         document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+     }, false);
+
+    window.addEventListener('resize', function(event) {
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        
+        activeElement = Array.from(elements).find((element) => {
+            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
+                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+                return element;
+            }
+        }) || activeElement
+
+        elements.forEach(element => {
+             const id = encodeURI(element.getAttribute('id')).toLowerCase();
+             if (element === activeElement){
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+             } else {
+                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+             }
+         })
+     }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;   
+    }
+</script>
+
+  <div class="post-content"><h2 id="intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans">Intégrer de la domotique dans un produit vieux de 16 ans<a hidden class="anchor" aria-hidden="true" href="#intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans">#</a></h2>
+<p>Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.</p>
+<p>Ce robot est le Roomba 551, il a été commercialisé en 2008 et apportait à l&rsquo;époque la programmation automatique de nettoyages. En essayant de le charger, rien ne se passe, je le démonte et je retrouve une batterie complétement rouillée et à plat. J&rsquo;en décide d&rsquo;en commander une autre et je remarque un port DIN7 sur la face supérieure de l&rsquo;appareil.</p>
+<p><figure class="align-center ">
+    <img loading="lazy" src="image-4.png#center" width="450px"/> 
+</figure>
+
+<em>Port DIN7 du Roomba.</em></p>
+<p>En faisant quelques recherches, je tombe sur toute une documentation destinée à la programmation et à la modification du firmware, ce programme s&rsquo;appelle l&rsquo;iRobot Roomba Open Interface ( <a href="http://www.robotikasklubs.lv/read_write/file/Piemers/iRobot_Roomba_500_Open_Interface_Spec.pdf">http://www.robotikasklubs.lv/read_write/file/Piemers/iRobot_Roomba_500_Open_Interface_Spec.pdf</a> ).</p>
+<p><img loading="lazy" src="image.png" alt="Pin map port DIN7 dans l&rsquo;iRobot Roomba Open Interface"  />
+
+<em>Pin map port DIN7 dans l&rsquo;iRobot Roomba Open Interface</em></p>
+<p>Tout y est décrit, les spécificités de la communication série, les opcodes de contrôle de l&rsquo;appareil, le poids, la vitesse, les capteurs, tout y est. Une seule chose me vient en tête, c&rsquo;est de connecter cet aspirateur Robot à Home Assistant. Il me suffit juste d&rsquo;intégrer une solution avec un microcontrôleur Wifi.</p>
+<h2 id="choix-du-microcontrolleur-et-schéma-de-cablâge">Choix du microcontrolleur et schéma de cablâge<a hidden class="anchor" aria-hidden="true" href="#choix-du-microcontrolleur-et-schéma-de-cablâge">#</a></h2>
+<p>Le premier choix pour un microcontrôleur avec des capacités Wi-Fi est l&rsquo;ESP, et plus précisément l&rsquo;ESP32. C&rsquo;est la plateforme la plus simple, la plus complète et la moins chère actuellement. On la retrouve sur tous les appareils domotiques, sous différentes formes, mais cela reste la même puce. J&rsquo;opte pour un module ESP32-WROOM à 2€.</p>
+<p>Ce module ESP nécessite une alimentation de 5V, cependant aucun pin du port DIN7 ne fournit celle-ci. Un port fournit l&rsquo;alimentation directe provenant de la batterie. Celle-ci indique une tension de 14.4V, mais il est bien évident que la tension d&rsquo;une batterie varie avec sa charge. C&rsquo;est pourquoi j&rsquo;ai choisi un convertisseur DC-DC buck afin de simplement réduire la tension, qu&rsquo;elle soit de 14V ou de 11V à 5V pour l&rsquo;ESP32. Le câblage sera le suivant :</p>
+<p><img loading="lazy" src="image-1.png" alt="Schéma de câblage"  />
+
+<em>Schéma de câblage de l&rsquo;ESP et du convertisseur buck</em></p>
+<p>Le pin BRC permettra d&rsquo;allumer le Roomba s&rsquo;il s&rsquo;éteint. C&rsquo;est la seule manière pour le réveiller avec l&rsquo;appui physique du bouton.</p>
+<h2 id="debug-et-tests-communication-série">Debug et tests communication série<a hidden class="anchor" aria-hidden="true" href="#debug-et-tests-communication-série">#</a></h2>
+<p>Avant de câbler, je décide de tester simplement la communication série à l&rsquo;aide d&rsquo;une plateforme que je connais mieux : Arduino. Dès notre première année de BUT GEII nous avons pu concevoir une carte Arduino Leonardo en CAO et souder ses composants.</p>
+<p><figure class="align-center ">
+    <img loading="lazy" src="image0.jpeg#center" width="450px"/> 
+</figure>
+
+<em>Elle est quand même pas mal cette carte !</em></p>
+<p>Cette carte permet l&rsquo;utilisation de deux ports série matériels en même temps, ce qui est plus simple et plus pratique pour tester le robot. Avec une simple configuration multiserial je le câble et j&rsquo;obtiens un petit message de mon robot :</p>
+<p><img loading="lazy" src="image-7.png" alt="Boot message Roomba 551"  />
+
+<em>Apparament il est resté bloqué en 2010&hellip;</em></p>
+<p>Je décide d&rsquo;aller plus loin et de chercher des travaux préexistants sur le Roomba en Arduino. Je tombe sur ce repo Github ( <a href="https://github.com/pkyanam/ArduRoomba">https://github.com/pkyanam/ArduRoomba</a> ) et tout y est. Toutes les commandes et les opcodes associés. J&rsquo;essaie alors la commande Start (Initialisation com série), Safe (Safe Mode Roomba) puis Clean (Mode nettoyage), et le robot lance un cycle de nettoyage. C&rsquo;est merveilleux !</p>
+<p>Je décide enfin de câbler mon ESP, ce câblage est temporaire le temps que la solution fonctionne :</p>
+<p><figure class="align-center ">
+    <img loading="lazy" src="image-5.png#center" width="450px"/> 
+</figure>
+
+<em>Oui c&rsquo;est pas très propre pour l&rsquo;instant.</em></p>
+<h2 id="esphome-un-framework-simple-et-puissant">ESPHome, un framework simple et puissant<a hidden class="anchor" aria-hidden="true" href="#esphome-un-framework-simple-et-puissant">#</a></h2>
+<p>ESPHome est un framework qui permet de programmer des microcontrôleurs ESP très simplement et de les intégrer dans des systèmes domotiques pré-existants. Pour ma part ça sera Home Assistant.</p>
+<p>Afin d&rsquo;installer ESPHome sur Home Assistant, je me rends dans <strong>Modules complémentaires / Store / ESPHome</strong>. Une fois le module installé, on arrive sur une page permettant d&rsquo;ajouter un appareil avec <strong>New Device</strong>. À partir de là, tout est guidé. Il suffit d&rsquo;installer ESPHome ainsi qu&rsquo;une configuration Wi-Fi sur un microcontrolleur branché en USB. Une fois cela, fait-il n&rsquo;y a plus besoin de brancher l&rsquo;appareil et les mises à jour peuvent se faire en OTA (Over The Air).</p>
+<p>Le fichier de configuration permet de directement intégrer du code sur l&rsquo;appareil et de faire le lien avec les entités Home Assistant. Mon premier fichier de configuration utilise la fonction UART de ESPHome afin de communiquer avec le robot :</p>
+<h3 id="première-config--commande-seulement">Première config : Commande seulement<a hidden class="anchor" aria-hidden="true" href="#première-config--commande-seulement">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Config ESPHome</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">esphome</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">roombaesp</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">friendly_name</span>: <span style="color:#ae81ff">roombaesp</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">esp32</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">board</span>: <span style="color:#ae81ff">esp32dev</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">framework</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">arduino</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pour des raisons de sécurité les config Wifi et API on été supprimées</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialisation UART</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">uart</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">baud_rate</span>: <span style="color:#ae81ff">19200</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tx_pin</span>: <span style="color:#ae81ff">GPIO1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">rx_pin</span>: <span style="color:#ae81ff">GPIO3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stop_bits</span>: <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">output</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">gpio</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">id</span>: <span style="color:#ae81ff">brc_pin</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">pin</span>: <span style="color:#ae81ff">GPIO21</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">inverted</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commandes du Roomba</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">switch</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Setup&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">then</span>:
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">output.turn_on</span>: <span style="color:#ae81ff">brc_pin</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">2s</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">repeat</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">count</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">then</span>:
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">output.turn_off</span>: <span style="color:#ae81ff">brc_pin</span>
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">100ms</span>
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">output.turn_on</span>: <span style="color:#ae81ff">brc_pin</span>
+</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">100ms</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">128</span>]
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">100ms</span>
+</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">131</span>]
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Clean&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">135</span>]
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Power&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">133</span>]
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Base&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">143</span>]
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Start&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">128</span>]
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Safe&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">131</span>]
+</span></span></code></pre></div><p>Cette configuration fonctionne, mais aucun retour d&rsquo;information du robot n&rsquo;est disponible. Il est possible d&rsquo;écrire un bout de code pour récupérer chaque information, mais par chance, cela a déjà été fait par la communauté ESPHome (voir <a href="https://community.home-assistant.io/t/add-wifi-to-an-older-roomba/23282">https://community.home-assistant.io/t/add-wifi-to-an-older-roomba/23282</a> ). Il me suffit de combiner mon code et celui de ce repo github sur la branche UART ( <a href="https://github.com/davidecavestro/ESPHomeRoombaComponent/tree/uart">https://github.com/davidecavestro/ESPHomeRoombaComponent/tree/uart</a> ) afin d&rsquo;à la fois avoir les capteurs, mais aussi les commandes !</p>
+<h3 id="deuxième-config--commande-et-capteurs">Deuxième config : Commande et capteurs<a hidden class="anchor" aria-hidden="true" href="#deuxième-config--commande-et-capteurs">#</a></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Config ESPHomes et Bibliothèques</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">esphome</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;roomba&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">esp32</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">board</span>: <span style="color:#ae81ff">esp32dev</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">includes</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ESPHomeRoombaComponent.h</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">libraries</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">EspSoftwareSerial</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Roomba=https://github.com/davidecavestro/Roomba.git</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">substitutions</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">friendly_name</span>: <span style="color:#e6db74">&#34;Roomba&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># BRC pin, RX pin, TX pin, polling interval in milliseconds</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Pin 3 is labeled rx on the wemos d1 mini, 1 is labeled TX We don&#39;t use the hardware UART but we&#39;re using its pins!</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">init</span>: <span style="color:#e6db74">&#34;RoombaComponent::instance(21, id(uart_bus), 8000, false);&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pour des raisons de sécurité les config Wifi et API on été supprimées</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialisation UART</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">uart</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">uart_bus</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tx_pin</span>: <span style="color:#ae81ff">GPIO1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">rx_pin</span>: <span style="color:#ae81ff">GPIO3</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">baud_rate</span>: <span style="color:#ae81ff">115200</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enable logging</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">logger</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">hardware_uart</span>: <span style="color:#ae81ff">UART1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Capteurs du Roomba</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">custom_component</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      return {r};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sensor</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">custom</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      return {r-&gt;voltageSensor, r-&gt;currentSensor, r-&gt;batteryChargeSensor, r-&gt;batteryCapacitySensor, r-&gt;batteryPercentSensor, r-&gt;batteryTemperatureSensor, r-&gt;driveSpeedSensor};</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sensors</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} voltage&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;V&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:sine-wave</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} current&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;A&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:lightning-bolt</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} charge&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;Ah&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery-charging</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} capacity&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;Ah&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} battery&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;%&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">state_class</span>: <span style="color:#e6db74">&#34;measurement&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">device_class</span>: <span style="color:#ae81ff">battery</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery-outline</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} temperature&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;°C&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:thermometer</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
+</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} drive speed&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;mm/s&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:speedometer</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">text_sensor</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">custom</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      return {r-&gt;chargingSensor, r-&gt;activitySensor, r-&gt;oiModeSensor};</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">text_sensors</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} charging state&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery-charging-high</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} activity&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:robot-vacuum-variant</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} OI mode&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:steering</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commandes du Roomba</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">button</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Locate&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;locate&#34;);</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Dock&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;dock&#34;);</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Clean&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;start&#34;);</span>
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Sleep&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;sleep&#34;);</span>
+</span></span></code></pre></div><p>Tout fonctionne parfaitement et tout est disponible sur Home Assistant :</p>
+<p><img loading="lazy" src="image-2.png" alt="alt text"  />
+</p>
+<h2 id="template-home-assistant-et-assistants-vocaux">Template Home Assistant et Assistants vocaux<a hidden class="anchor" aria-hidden="true" href="#template-home-assistant-et-assistants-vocaux">#</a></h2>
+<p>Maintenant, je souhaite faire en sorte que mon appareil s&rsquo;affiche en tant que robot aspirateur. Cela permettra l&rsquo;intégration de services comme Apple Homekit ou Google Assitant. Pour cela, rien de plus simple, il me suffit de faire une <strong>Vacuum Template</strong> sur Home Assistant. L&rsquo;objectif est simplement de reprendre les entités de l&rsquo;ESP32 et de les associer à chaque fonctionnalité d&rsquo;une entité robot aspirateur :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">vacuum</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">vacuums</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">roomba</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">value_template</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_activity&#39;)|lower }}&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">battery_level_template</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_battery&#39;)|int }}&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">attribute_templates</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">activity</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_activity&#39;) }}&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">oi_mode</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_oi_mode&#39;)|title }}&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">charging_state</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_charging_state&#39;) }}&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">temperature</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_temperature&#39;)|int }} °C&#34;</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">voltage</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_voltage&#39;)|int }} V&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">start</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">service</span>: <span style="color:#ae81ff">button.press</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">button.clean</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">stop</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">service</span>: <span style="color:#ae81ff">button.press</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">button.locate</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">return_to_base</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">service</span>: <span style="color:#ae81ff">button.press</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">target</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">button.dock</span>
+</span></span></code></pre></div><p>On obtient bien notre appareil qui est prêt à être intégré sur les assistants vocaux :</p>
+<p><figure class="align-center ">
+    <img loading="lazy" src="image-3.png#center" width="450px"/> 
+</figure>
+
+<em>Mission réussie !</em></p>
+<p>Il me reste plus qu&rsquo;à attendre la mise à jour Apple Homekit plus tard cette année pour le support des robots aspirateurs. :)</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/fr/tags/projet/">Projet</a></li>
+      <li><a href="http://localhost:1313/fr/tags/geii/">GEII</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="prev" href="http://localhost:1313/fr/projects/kart_test_bench/">
+    <span class="title">« Précédent</span>
+    <br>
+    <span>Projet universitaire Bac&#43;3 (partie 1) : Banc de test pour un kart électrique</span>
+  </a>
+  <a class="next" href="http://localhost:1313/fr/projects/esp-roomba/">
+    <span class="title">Suivant »</span>
+    <br>
+    <span>Connecter un ancien aspirateur robot Roomba sur une plateforme domotique</span>
+  </a>
+</nav>
+
+
+<ul class="share-buttons">
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on x"
+            href="https://x.com/intent/tweet/?text=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me&amp;url=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f&amp;hashtags=projet%2cGEII">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f&amp;title=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me&amp;summary=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me&amp;source=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on reddit"
+            href="https://reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f&title=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-3.446,265.638c0,-22.964 -18.616,-41.58 -41.58,-41.58c-11.211,0 -21.361,4.457 -28.841,11.666c-28.424,-20.508 -67.586,-33.757 -111.204,-35.278l18.941,-89.121l61.884,13.157c0.756,15.734 13.642,28.29 29.56,28.29c16.407,0 29.706,-13.299 29.706,-29.701c0,-16.403 -13.299,-29.702 -29.706,-29.702c-11.666,0 -21.657,6.792 -26.515,16.578l-69.105,-14.69c-1.922,-0.418 -3.939,-0.042 -5.585,1.036c-1.658,1.073 -2.811,2.761 -3.224,4.686l-21.152,99.438c-44.258,1.228 -84.046,14.494 -112.837,35.232c-7.468,-7.164 -17.589,-11.591 -28.757,-11.591c-22.965,0 -41.585,18.616 -41.585,41.58c0,16.896 10.095,31.41 24.568,37.918c-0.639,4.135 -0.99,8.328 -0.99,12.576c0,63.977 74.469,115.836 166.33,115.836c91.861,0 166.334,-51.859 166.334,-115.836c0,-4.218 -0.347,-8.387 -0.977,-12.493c14.564,-6.47 24.735,-21.034 24.735,-38.001Zm-119.474,108.193c-20.27,20.241 -59.115,21.816 -70.534,21.816c-11.428,0 -50.277,-1.575 -70.522,-21.82c-3.007,-3.008 -3.007,-7.882 0,-10.889c3.003,-2.999 7.882,-3.003 10.885,0c12.777,12.781 40.11,17.317 59.637,17.317c19.522,0 46.86,-4.536 59.657,-17.321c3.016,-2.999 7.886,-2.995 10.885,0.008c3.008,3.011 3.003,7.882 -0.008,10.889Zm-5.23,-48.781c-16.373,0 -29.701,-13.324 -29.701,-29.698c0,-16.381 13.328,-29.714 29.701,-29.714c16.378,0 29.706,13.333 29.706,29.714c0,16.374 -13.328,29.698 -29.706,29.698Zm-160.386,-29.702c0,-16.381 13.328,-29.71 29.714,-29.71c16.369,0 29.689,13.329 29.689,29.71c0,16.373 -13.32,29.693 -29.689,29.693c-16.386,0 -29.714,-13.32 -29.714,-29.693Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on facebook"
+            href="https://facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-106.468,0l0,-192.915l66.6,0l12.672,-82.621l-79.272,0l0,-53.617c0,-22.603 11.073,-44.636 46.58,-44.636l36.042,0l0,-70.34c0,0 -32.71,-5.582 -63.982,-5.582c-65.288,0 -107.96,39.569 -107.96,111.204l0,62.971l-72.573,0l0,82.621l72.573,0l0,192.915l-191.104,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on whatsapp"
+            href="https://api.whatsapp.com/send?text=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me%20-%20http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f">
+            <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-58.673,127.703c-33.842,-33.881 -78.847,-52.548 -126.798,-52.568c-98.799,0 -179.21,80.405 -179.249,179.234c-0.013,31.593 8.241,62.428 23.927,89.612l-25.429,92.884l95.021,-24.925c26.181,14.28 55.659,21.807 85.658,21.816l0.074,0c98.789,0 179.206,-80.413 179.247,-179.243c0.018,-47.895 -18.61,-92.93 -52.451,-126.81Zm-126.797,275.782l-0.06,0c-26.734,-0.01 -52.954,-7.193 -75.828,-20.767l-5.441,-3.229l-56.386,14.792l15.05,-54.977l-3.542,-5.637c-14.913,-23.72 -22.791,-51.136 -22.779,-79.287c0.033,-82.142 66.867,-148.971 149.046,-148.971c39.793,0.014 77.199,15.531 105.329,43.692c28.128,28.16 43.609,65.592 43.594,105.4c-0.034,82.149 -66.866,148.983 -148.983,148.984Zm81.721,-111.581c-4.479,-2.242 -26.499,-13.075 -30.604,-14.571c-4.105,-1.495 -7.091,-2.241 -10.077,2.241c-2.986,4.483 -11.569,14.572 -14.182,17.562c-2.612,2.988 -5.225,3.364 -9.703,1.12c-4.479,-2.241 -18.91,-6.97 -36.017,-22.23c-13.314,-11.876 -22.304,-26.542 -24.916,-31.026c-2.612,-4.484 -0.279,-6.908 1.963,-9.14c2.016,-2.007 4.48,-5.232 6.719,-7.847c2.24,-2.615 2.986,-4.484 4.479,-7.472c1.493,-2.99 0.747,-5.604 -0.374,-7.846c-1.119,-2.241 -10.077,-24.288 -13.809,-33.256c-3.635,-8.733 -7.327,-7.55 -10.077,-7.688c-2.609,-0.13 -5.598,-0.158 -8.583,-0.158c-2.986,0 -7.839,1.121 -11.944,5.604c-4.105,4.484 -15.675,15.32 -15.675,37.364c0,22.046 16.048,43.342 18.287,46.332c2.24,2.99 31.582,48.227 76.511,67.627c10.685,4.615 19.028,7.371 25.533,9.434c10.728,3.41 20.492,2.929 28.209,1.775c8.605,-1.285 26.499,-10.833 30.231,-21.295c3.732,-10.464 3.732,-19.431 2.612,-21.298c-1.119,-1.869 -4.105,-2.99 -8.583,-5.232Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on telegram"
+            href="https://telegram.me/share/url?text=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me&amp;url=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f">
+            <svg version="1.1" xml:space="preserve" viewBox="2 2 28 28" height="30px" width="30px" fill="currentColor">
+                <path
+                    d="M26.49,29.86H5.5a3.37,3.37,0,0,1-2.47-1,3.35,3.35,0,0,1-1-2.47V5.48A3.36,3.36,0,0,1,3,3,3.37,3.37,0,0,1,5.5,2h21A3.38,3.38,0,0,1,29,3a3.36,3.36,0,0,1,1,2.46V26.37a3.35,3.35,0,0,1-1,2.47A3.38,3.38,0,0,1,26.49,29.86Zm-5.38-6.71a.79.79,0,0,0,.85-.66L24.73,9.24a.55.55,0,0,0-.18-.46.62.62,0,0,0-.41-.17q-.08,0-16.53,6.11a.59.59,0,0,0-.41.59.57.57,0,0,0,.43.52l4,1.24,1.61,4.83a.62.62,0,0,0,.63.43.56.56,0,0,0,.4-.17L16.54,20l4.09,3A.9.9,0,0,0,21.11,23.15ZM13.8,20.71l-1.21-4q8.72-5.55,8.78-5.55c.15,0,.23,0,.23.16a.18.18,0,0,1,0,.06s-2.51,2.3-7.52,6.8Z" />
+            </svg>
+        </a>
+    </li>
+    <li>
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Concours de Robotique Cachan deuxième on ycombinator"
+            href="https://news.ycombinator.com/submitlink?t=Concours%20de%20Robotique%20Cachan%20deuxi%c3%a8me&u=http%3a%2f%2flocalhost%3a1313%2ffr%2fprojects%2fCXoncours-robot-cachan-V%2f">
+            <svg version="1.1" xml:space="preserve" width="30px" height="30px" viewBox="0 0 512 512" fill="currentColor"
+                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">
+                <path
+                    d="M449.446 0C483.971 0 512 28.03 512 62.554L512 449.446C512 483.97 483.97 512 449.446 512L62.554 512C28.03 512 0 483.97 0 449.446L0 62.554C0 28.03 28.029 0 62.554 0L449.446 0ZM183.8767 87.9921H121.8427L230.6673 292.4508V424.0079H281.3328V292.4508L390.1575 87.9921H328.1233L256 238.2489z" />
+            </svg>
+        </a>
+    </li>
+</ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/fr/">Alexandre</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Domotique on Alexandre</title>
+    <link>http://localhost:1313/fr/tags/domotique/</link>
+    <description>Recent content in Domotique on Alexandre</description>
+    <image>
+      <title>Alexandre</title>
+      <url>http://localhost:1313/1739734917588.jpg</url>
+      <link>http://localhost:1313/1739734917588.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>fr</language>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/tags/domotique/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connecter un ancien aspirateur robot Roomba sur une plateforme domotique</title>
+      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Une solution DIY de monitoring des consommations avec Home Assistant</title>
+      <link>http://localhost:1313/fr/projects/monitoring_hass/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/monitoring_hass/</guid>
+      <description>Une solution de monitoring de la consommation d&amp;rsquo;électricité et d&amp;rsquo;eau, intégrée l&amp;rsquo;environnement domotique Home Assistant</description>
+    </item>
+  </channel>
+</rss>

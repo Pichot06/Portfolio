@@ -1,17 +1,15 @@
-baseURL: ""
+baseURL: "https://nextravel.fr"
 languageCode: en-us
 theme: PaperMod
-title: Redwan Benmansour
-
+title: Alexandre Pichot
 
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 
-
 params:
   displayFullLangName: true
   mainSections:
-  - projects
+    - projects
   defaultTheme: light
   disableThemeToggle: true
   ShowReadingTime: true
@@ -19,61 +17,60 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowDate: true
-  author: Redwan Benmansour
+  author: Alexandre Pichot
   images: ["1739734917588.jpg"]
 
-
 languages:
-  en:
-    languageName: 🇬🇧
-    weight: 10
-    contentDir: content/en
-    title: Redwan
-    menu:
-      main:
-        - identifier: accueil
-          name: 🏠 Home 
-          url: /en/
-          weight: 10
-        - identifier: about
-          name: 🙂 About
-          url: /en/about/
-          weight: 20
-        - identifier: projets
-          name: 🔧 Projects
-          url: /en/projects/
-          weight: 30
-    params:
-      images: ["1739734917588.jpg"]
-      profileMode:
-        enabled: true
-        title: "Redwan Benmansour" # optional default will be site title
-        subtitle: "Third-year student in EEE, I'm looking for an engineering school in the fields of electrical energy or IoT."
-        imageUrl: "1739734917588.jpg" # optional
-        imageTitle: "Redwan Benmansour" # optional
-        imageWidth: 120 # custom size
-        imageHeight: 120 # custom size
-        buttons:
-          - name: Download resume
-            url: "/en/CV_EN_Redwan_BENMANSOUR.pdf"
-      DateFormat: "January 2, 2006"
-      socialIcons: # optional
-        - name: "linkedin"
-          url: "https://www.linkedin.com/in/redwan-benmansour-48502117a/"
-        - name: "github"
-          url: "https://github.com/redwanbnmnsr"
-        - name: "email"
-          url: "mailto:redwan.benmansour@outlook.com"
+  # en:
+  #   languageName: 🇬🇧
+  #   weight: 10
+  #   contentDir: content/en
+  #   title: Redwan
+  #   menu:
+  #     main:
+  #       - identifier: accueil
+  #         name: 🏠 Home
+  #         url: /en/
+  #         weight: 10
+  #       - identifier: about
+  #         name: 🙂 About
+  #         url: /en/about/
+  #         weight: 20
+  #       - identifier: projets
+  #         name: 🔧 Projects
+  #         url: /en/projects/
+  #         weight: 30
+  #   params:
+  #     images: ["1739734917588.jpg"]
+  #     profileMode:
+  #       enabled: true
+  #       title: "Alexandre Pichot" # optional default will be site title
+  #       subtitle: "Third-year student in EEE, I'm looking for an engineering school in the fields of electrical energy or IoT."
+  #       imageUrl: "1739734917588.jpg" # optional
+  #       imageTitle: "Alexandre Pichot" # optional
+  #       imageWidth: 120 # custom size
+  #       imageHeight: 120 # custom size
+  #       buttons:
+  #         - name: Download resume
+  #           url: "/en/CV_Pichot.pdf"
+  #     DateFormat: "January 2, 2006"
+  #     socialIcons: # optional
+  #       - name: "linkedin"
+  #         url: "https://www.linkedin.com/in/alexandre-pichot-a81360233/"
+  #       - name: "github"
+  #         url: "https://github.com/Pichot06"
+  #       - name: "email"
+  #         url: "mailto:alexandre.pichotx@gmail.com"
 
   fr:
     languageName: 🇫🇷
     weight: 20
-    title: Redwan
+    title: Alexandre
     contentDir: content/fr
     menu:
       main:
         - identifier: accueil
-          name: 🏠 Accueil 
+          name: 🏠 Accueil
           url: /fr/
           weight: 10
         - identifier: about
@@ -85,27 +82,25 @@ languages:
           url: /fr/projects/
           weight: 30
 
-
     params:
       images: ["1739734917588.jpg"]
       profileMode:
         enabled: true
-        title: "Redwan Benmansour" # optional default will be site title
+        title: "Alexandre Pichot" # optional default will be site title
         subtitle: "Étudiant en troisème année de BUT GEII, je suis à la recherche d'une école d'ingénieur dans les domaines de l'énergie électrique ou de l'IoT. "
         imageUrl: "1739734917588.jpg" # optional
-        imageTitle: "Redwan Benmansour" # optional
+        imageTitle: "Alexandre Pichot" # optional
         imageWidth: 120 # custom size
         imageHeight: 120 # custom size
         buttons:
           - name: Télécharger le CV
-            url: "/fr/CV_FR_Redwan_BENMANSOUR.pdf"
+            url: "/fr/CV_Pichot.pdf"
       DateFormat: "2 January 2006"
-
 
       socialIcons: # optional
         - name: "linkedin"
-          url: "https://www.linkedin.com/in/redwan-benmansour/"
+          url: "https://www.linkedin.com/in/alexandre-pichot-a81360233/"
         - name: "github"
-          url: "https://github.com/redwanbnmnsr"
+          url: "https://github.com/Pichot06"
         - name: "email"
-          url: "mailto:redwan.benmansour@outlook.com"
+          url: "mailto:alexandre.pichotx@gmail.com"

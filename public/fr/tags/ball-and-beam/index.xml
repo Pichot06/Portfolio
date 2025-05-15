@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Ball and Beam on Alexandre</title>
+    <link>http://localhost:1313/fr/tags/ball-and-beam/</link>
+    <description>Recent content in Ball and Beam on Alexandre</description>
+    <image>
+      <title>Alexandre</title>
+      <url>http://localhost:1313/1739734917588.jpg</url>
+      <link>http://localhost:1313/1739734917588.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>fr</language>
+    <lastBuildDate>Mon, 13 May 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/fr/tags/ball-and-beam/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projet universitaire Bac&#43;2 : Les étudiants GEII de l’IUT de l’Indre présentent leur projet « Ball and Beam » au concours national du club EEA</title>
+      <link>http://localhost:1313/fr/projects/ball_and_beam/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/ball_and_beam/</guid>
+      <description>Châteauroux, IUT de l’Indre, le 13 mai 2024. Dans le cadre du concours « Mon projet en 5 min » du club EEA, les deux étudiants Roman Couet et Redwan Benmansour déposent aujourd’hui leur candidature vidéo. Leur objectif &amp;lsquo;:&amp;rsquo; remporter le concours et la dotation de 2000€.</description>
+    </item>
+  </channel>
+</rss>

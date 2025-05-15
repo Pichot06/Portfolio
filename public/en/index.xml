@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Alexandre Pichot on Redwan</title>
+    <link>http://localhost:1313/en/</link>
+    <description>Recent content in Alexandre Pichot on Redwan</description>
+    <image>
+      <title>Redwan</title>
+      <url>http://localhost:1313/1739734917588.jpg</url>
+      <link>http://localhost:1313/1739734917588.jpg</link>
+    </image>
+    <generator>Hugo -- 0.147.3</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connecting an old Roomba robot vacuum to a home automation platform</title>
+      <link>http://localhost:1313/en/projects/esp-roomba/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/projects/esp-roomba/</guid>
+      <description>&lt;h2 id=&#34;integrating-home-automation-into-a-16-year-old-product&#34;&gt;Integrating home automation into a 16-year-old product&lt;/h2&gt;
+&lt;p&gt;The Roomba is one of the first robot vacuum cleaners, marketed in 2002. This technology was revolutionary for its time and quite expensive. Nowadays, many manufacturers offer Wi-Fi-connected robot vacuums with countless features. I remember that we had one of these robots when I was little. After searching a bit, I found it under stacked boxes.&lt;/p&gt;
+&lt;p&gt;This robot is the Roomba 551, which was marketed in 2008 and brought automatic cleaning scheduling at the time. When trying to charge it, nothing happens. I disassemble it and find a completely rusted and flat battery. I decide to order another one and notice a DIN7 port on the top of the device.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A DIY solution for monitoring consumption with Home Assistant</title>
+      <link>http://localhost:1313/en/projects/monitoring_hass/</link>
+      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/projects/monitoring_hass/</guid>
+      <description>A solution for monitoring electricity and water consumption, integrated into the Home Assistant home automation environment</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/en/about/</link>
+      <pubDate>Tue, 09 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/about/</guid>
+      <description>About</description>
+    </item>
+    <item>
+      <title>GEII students from the Indre IUT present their « Ball and Beam » project at the national EEA Club competition.</title>
+      <link>http://localhost:1313/en/projects/ball_and_beam/</link>
+      <pubDate>Mon, 13 May 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/en/projects/ball_and_beam/</guid>
+      <description>Châteauroux, IUT de l’Indre, le 13 mai 2024. As part of the EEA Club&amp;rsquo;s « My project in 5 minutes » competition, students Roman Couet and Redwan Benmansour are submitting their video entries today. Their goal:&amp;rsquo; to win the competition and the €2,000 prize.</description>
+    </item>
+  </channel>
+</rss>

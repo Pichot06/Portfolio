@@ -1,5 +1,5 @@
 ---
-title: "Redwan Benmansour"
+title: "Alexandre Pichot"
 layout: "profile"
 url: "/fr/"
 ---
