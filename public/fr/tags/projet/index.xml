@@ -14,42 +14,57 @@
     <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/fr/tags/projet/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Concours de Robotique Cachan deuxième</title>
-      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <title>Arroseur de plante</title>
+      <link>http://localhost:1313/fr/projects/Arroseur-de-plante/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
-      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
-&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/fr/projects/Arroseur-de-plante/</guid>
+      <description>&lt;h2 id=&#34;document&#34;&gt;Document&lt;/h2&gt;
+&lt;div class=&#34;button-download-wrapper&#34;&gt;
+    &lt;a href=&#34;rapport_plante.pdf&#34; target=&#34;_blank&#34; class=&#34;button-download&#34;&gt;
+      Télécharger le PDF
+    &lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;style&gt;
+  .button-download {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .button-download:hover {
+    background-color: #2980b9;
+  }
+  
+   
+  .button-download-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;  
+  }
+  &lt;/style&gt;
+  
+&lt;embed src= &#34;rapport_plante.pdf&#34; width= &#34;100%&#34; height= &#34;1000px&#34; type=&#34;application/pdf&#34; &gt;</description>
     </item>
     <item>
       <title>Concours de Robotique Cachan deuxième</title>
-      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
+      <link>http://localhost:1313/fr/projects/Concours-robot-cachan-V2/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
-      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
-&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/fr/projects/Concours-robot-cachan-V2/</guid>
+      <description>&lt;p&gt;Pendant ma deuxième année à l’IUT de Nice, j’ai participé au projet national de la Rencontre Robotique des IUT GEII. Cet événement regroupe des étudiants de toute la France autour d’un défi commun : concevoir un robot totalement autonome capable de parcourir un terrain rempli d’obstacles, d’un coin à l’autre, sans aucune intervention extérieure. Le projet sur lequel j’ai travaillé s’inscrit dans le cadre du challenge ESCAPEBOT.&lt;/p&gt;
+&lt;h2 id=&#34;explication-du-projet&#34;&gt;Explication Du projet&lt;/h2&gt;
+&lt;p&gt;Le principe est simple en apparence, mais exigeant sur le plan technique : chaque robot, doit quitter sa zone de départ et rejoindre sa zone d’arrivée située en diagonale, tout en évitant les obstacles de 15 cm de hauteur répartis aléatoirement sur le terrain. Le terrain, d’une surface de 8 m sur 8 m, est conçu pour que les parcours soient équivalents pour tous les robots.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Concours de Robotique Cachan deuxième</title>
-      <link>http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/</link>
+      <title>Concours de Robotique Cachan première année</title>
+      <link>http://localhost:1313/fr/projects/Concours-robot-cachan-V1/</link>
       <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/</guid>
-      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
-&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Concours de Robotique Cachan deuxième</title>
-      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
-      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
-&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Connecter un ancien aspirateur robot Roomba sur une plateforme domotique</title>
-      <link>http://localhost:1313/fr/projects/esp-roomba/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/esp-roomba/</guid>
+      <guid>http://localhost:1313/fr/projects/Concours-robot-cachan-V1/</guid>
       <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
 &lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
     </item>
@@ -62,18 +77,26 @@
 &lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Une solution DIY de monitoring des consommations avec Home Assistant</title>
-      <link>http://localhost:1313/fr/projects/monitoring_hass/</link>
-      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/monitoring_hass/</guid>
-      <description>Une solution de monitoring de la consommation d&amp;rsquo;électricité et d&amp;rsquo;eau, intégrée l&amp;rsquo;environnement domotique Home Assistant</description>
+      <title>SimIA</title>
+      <link>http://localhost:1313/fr/projects/SimIA/</link>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/SimIA/</guid>
+      <description>&lt;h2 id=&#34;intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans&#34;&gt;Intégrer de la domotique dans un produit vieux de 16 ans&lt;/h2&gt;
+&lt;p&gt;Le Roomba est l&amp;rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&amp;rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&amp;rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Rénovation des éclairages de l&#39;IUT de l&#39;Indre</title>
-      <link>http://localhost:1313/fr/projects/renovation_luminaires/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/projects/renovation_luminaires/</guid>
-      <description>Dans le cadre de notre formation en Génie Électrique et Informatique Industrielle spécialitée Électricité et Maitrise de l&amp;rsquo;Énergie, nous avons réalisé un projet de rénovation énergétique des luminaires de l&amp;rsquo;IUT de l&amp;rsquo;Indre site de Châteauroux.</description>
+      <title>Projet Enceinte</title>
+      <link>http://localhost:1313/fr/projects/Enceinte/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/Enceinte/</guid>
+      <description>faire un ampli classe D</description>
+    </item>
+    <item>
+      <title>Une solution DIY de monitoring des consommations avec Home Assistant</title>
+      <link>http://localhost:1313/fr/projects/monitoring_hass_nas/</link>
+      <pubDate>Wed, 24 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/projects/monitoring_hass_nas/</guid>
+      <description>Création d&amp;rsquo;un Nas et d&amp;rsquo;un serveur Home Assistant</description>
     </item>
   </channel>
 </rss>

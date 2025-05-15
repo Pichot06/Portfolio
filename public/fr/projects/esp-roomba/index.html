@@ -479,15 +479,15 @@ Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002
       <li><a href="http://localhost:1313/fr/tags/geii/">GEII</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/">
+  <a class="prev" href="http://localhost:1313/fr/projects/Arroseur-de-plante/">
     <span class="title">« Précédent</span>
     <br>
-    <span>Concours de Robotique Cachan deuxième</span>
+    <span>Arroseur de plante</span>
   </a>
-  <a class="next" href="http://localhost:1313/fr/projects/esp-roomba/">
+  <a class="next" href="http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/">
     <span class="title">Suivant »</span>
     <br>
-    <span>Connecter un ancien aspirateur robot Roomba sur une plateforme domotique</span>
+    <span>Concours de Robotique Cachan deuxième</span>
   </a>
 </nav>
 
@@ -593,37 +593,6 @@ Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002
             var id = this.getAttribute("href").substr(1);
             if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
                 document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
-                    behavior: "smooth"
-                });
-            } else {
-                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
-            }
-            if (id === "top") {
-                history.replaceState(null, null, " ");
-            } else {
-                history.pushState(null, null, `#${id}`);
-            }
-        });
-    });
-
-</script>
-<script>
-    var mybutton = document.getElementById("top-link");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-            mybutton.style.visibility = "visible";
-            mybutton.style.opacity = "1";
-        } else {
-            mybutton.style.visibility = "hidden";
-            mybutton.style.opacity = "0";
-        }
-    };
-
-</script>
-</body>
-
-</html>
-rySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
                     behavior: "smooth"
                 });
             } else {

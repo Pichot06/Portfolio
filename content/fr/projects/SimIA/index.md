@@ -1,7 +1,7 @@
 ---
-title: "Concours de Robotique Cachan deuxième"
+title: "SimIA"
 date: 2024-08-31
-url: "/fr/projects/esp-roomba/"
+url: "/fr/projects/SimIA/"
 category: projects
 summary:
 description:

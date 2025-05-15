@@ -7,8 +7,9 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Concours de Robotique Cachan deuxième | Alexandre</title>
 <meta name="keywords" content="projet, GEII">
-<meta name="description" content="Intégrer de la domotique dans un produit vieux de 16 ans
-Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.">
+<meta name="description" content="Pendant ma deuxième année à l’IUT de Nice, j’ai participé au projet national de la Rencontre Robotique des IUT GEII. Cet événement regroupe des étudiants de toute la France autour d’un défi commun : concevoir un robot totalement autonome capable de parcourir un terrain rempli d’obstacles, d’un coin à l’autre, sans aucune intervention extérieure. Le projet sur lequel j’ai travaillé s’inscrit dans le cadre du challenge ESCAPEBOT.
+Explication Du projet
+Le principe est simple en apparence, mais exigeant sur le plan technique : chaque robot, doit quitter sa zone de départ et rejoindre sa zone d’arrivée située en diagonale, tout en évitant les obstacles de 15 cm de hauteur répartis aléatoirement sur le terrain. Le terrain, d’une surface de 8 m sur 8 m, est conçu pour que les parcours soient équivalents pour tous les robots.">
 <meta name="author" content="Alexandre Pichot">
 <link rel="canonical" href="http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.9f20f4d06b66d242482365943742c14b9a72e5be26f427cc1511376c6804e433.css" integrity="sha256-nyD00Gtm0kJII2WUN0LBS5py5b4m9CfMFRE3bGgE5DM=" rel="preload stylesheet" as="style">
@@ -67,11 +68,12 @@ Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002
     <h1 class="post-title entry-hint-parent">
       Concours de Robotique Cachan deuxième
     </h1>
-    <div class="post-meta"><span title='2024-08-31 00:00:00 +0000 UTC'>31 août 2024</span>&nbsp;·&nbsp;8 min&nbsp;·&nbsp;Alexandre Pichot
+    <div class="post-meta"><span title='2024-08-31 00:00:00 +0000 UTC'>31 août 2024</span>&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Alexandre Pichot
 
 </div>
   </header> 
-<figure class="entry-cover"><img loading="eager" src="http://localhost:1313/image2-1.jpeg" alt="">
+<figure class="entry-cover">
+        <img loading="eager" src="http://localhost:1313/fr/projects/CXoncours-robot-cachan-V2/2.jpg" alt="">
         
 </figure><aside id="toc-container" class="toc-container wide">
     <div class="toc">
@@ -82,21 +84,15 @@ Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002
 
             <div class="inner"><ul>
                     <li>
-                        <a href="#int%c3%a9grer-de-la-domotique-dans-un-produit-vieux-de-16-ans" aria-label="Intégrer de la domotique dans un produit vieux de 16 ans">Intégrer de la domotique dans un produit vieux de 16 ans</a></li>
+                        <a href="#explication-du-projet" aria-label="Explication Du projet">Explication Du projet</a></li>
                     <li>
-                        <a href="#choix-du-microcontrolleur-et-sch%c3%a9ma-de-cabl%c3%a2ge" aria-label="Choix du microcontrolleur et schéma de cablâge">Choix du microcontrolleur et schéma de cablâge</a></li>
+                        <a href="#mes-missions-dans-le-projet" aria-label="Mes missions dans le projet">Mes missions dans le projet</a></li>
                     <li>
-                        <a href="#debug-et-tests-communication-s%c3%a9rie" aria-label="Debug et tests communication série">Debug et tests communication série</a></li>
+                        <a href="#carte-commande" aria-label="Carte commande">Carte commande</a></li>
                     <li>
-                        <a href="#esphome-un-framework-simple-et-puissant" aria-label="ESPHome, un framework simple et puissant">ESPHome, un framework simple et puissant</a><ul>
-                            
+                        <a href="#carte-ihm" aria-label="Carte IHM">Carte IHM</a></li>
                     <li>
-                        <a href="#premi%c3%a8re-config--commande-seulement" aria-label="Première config : Commande seulement">Première config : Commande seulement</a></li>
-                    <li>
-                        <a href="#deuxi%c3%a8me-config--commande-et-capteurs" aria-label="Deuxième config : Commande et capteurs">Deuxième config : Commande et capteurs</a></li></ul>
-                    </li>
-                    <li>
-                        <a href="#template-home-assistant-et-assistants-vocaux" aria-label="Template Home Assistant et Assistants vocaux">Template Home Assistant et Assistants vocaux</a>
+                        <a href="#impression-3d" aria-label="Impression 3d">Impression 3d</a>
                     </li>
                 </ul>
             </div>
@@ -163,312 +159,213 @@ Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002
     }
 </script>
 
-  <div class="post-content"><h2 id="intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans">Intégrer de la domotique dans un produit vieux de 16 ans<a hidden class="anchor" aria-hidden="true" href="#intégrer-de-la-domotique-dans-un-produit-vieux-de-16-ans">#</a></h2>
-<p>Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l&rsquo;époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d&rsquo;innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.</p>
-<p>Ce robot est le Roomba 551, il a été commercialisé en 2008 et apportait à l&rsquo;époque la programmation automatique de nettoyages. En essayant de le charger, rien ne se passe, je le démonte et je retrouve une batterie complétement rouillée et à plat. J&rsquo;en décide d&rsquo;en commander une autre et je remarque un port DIN7 sur la face supérieure de l&rsquo;appareil.</p>
+  <div class="post-content"><p>Pendant ma deuxième année à l’IUT de Nice, j’ai participé au projet national de la Rencontre Robotique des IUT GEII. Cet événement regroupe des étudiants de toute la France autour d’un défi commun : concevoir un robot totalement autonome capable de parcourir un terrain rempli d’obstacles, d’un coin à l’autre, sans aucune intervention extérieure. Le projet sur lequel j’ai travaillé s’inscrit dans le cadre du challenge ESCAPEBOT.</p>
+<h2 id="explication-du-projet">Explication Du projet<a hidden class="anchor" aria-hidden="true" href="#explication-du-projet">#</a></h2>
+<p>Le principe est simple en apparence, mais exigeant sur le plan technique : chaque robot, doit quitter sa zone de départ et rejoindre sa zone d’arrivée située en diagonale, tout en évitant les obstacles de 15 cm de hauteur répartis aléatoirement sur le terrain. Le terrain, d’une surface de 8 m sur 8 m, est conçu pour que les parcours soient équivalents pour tous les robots.</p>
 <p><figure class="align-center ">
-    <img loading="lazy" src="image-4.png#center" width="450px"/> 
-</figure>
+     <img loading="lazy" src="photo.jpg#center" width="600px"/> 
+ </figure>
 
-<em>Port DIN7 du Roomba.</em></p>
-<p>En faisant quelques recherches, je tombe sur toute une documentation destinée à la programmation et à la modification du firmware, ce programme s&rsquo;appelle l&rsquo;iRobot Roomba Open Interface ( <a href="http://www.robotikasklubs.lv/read_write/file/Piemers/iRobot_Roomba_500_Open_Interface_Spec.pdf">http://www.robotikasklubs.lv/read_write/file/Piemers/iRobot_Roomba_500_Open_Interface_Spec.pdf</a> ).</p>
-<p><img loading="lazy" src="image.png" alt="Pin map port DIN7 dans l&rsquo;iRobot Roomba Open Interface"  />
-
-<em>Pin map port DIN7 dans l&rsquo;iRobot Roomba Open Interface</em></p>
-<p>Tout y est décrit, les spécificités de la communication série, les opcodes de contrôle de l&rsquo;appareil, le poids, la vitesse, les capteurs, tout y est. Une seule chose me vient en tête, c&rsquo;est de connecter cet aspirateur Robot à Home Assistant. Il me suffit juste d&rsquo;intégrer une solution avec un microcontrôleur Wifi.</p>
-<h2 id="choix-du-microcontrolleur-et-schéma-de-cablâge">Choix du microcontrolleur et schéma de cablâge<a hidden class="anchor" aria-hidden="true" href="#choix-du-microcontrolleur-et-schéma-de-cablâge">#</a></h2>
-<p>Le premier choix pour un microcontrôleur avec des capacités Wi-Fi est l&rsquo;ESP, et plus précisément l&rsquo;ESP32. C&rsquo;est la plateforme la plus simple, la plus complète et la moins chère actuellement. On la retrouve sur tous les appareils domotiques, sous différentes formes, mais cela reste la même puce. J&rsquo;opte pour un module ESP32-WROOM à 2€.</p>
-<p>Ce module ESP nécessite une alimentation de 5V, cependant aucun pin du port DIN7 ne fournit celle-ci. Un port fournit l&rsquo;alimentation directe provenant de la batterie. Celle-ci indique une tension de 14.4V, mais il est bien évident que la tension d&rsquo;une batterie varie avec sa charge. C&rsquo;est pourquoi j&rsquo;ai choisi un convertisseur DC-DC buck afin de simplement réduire la tension, qu&rsquo;elle soit de 14V ou de 11V à 5V pour l&rsquo;ESP32. Le câblage sera le suivant :</p>
-<p><img loading="lazy" src="image-1.png" alt="Schéma de câblage"  />
-
-<em>Schéma de câblage de l&rsquo;ESP et du convertisseur buck</em></p>
-<p>Le pin BRC permettra d&rsquo;allumer le Roomba s&rsquo;il s&rsquo;éteint. C&rsquo;est la seule manière pour le réveiller avec l&rsquo;appui physique du bouton.</p>
-<h2 id="debug-et-tests-communication-série">Debug et tests communication série<a hidden class="anchor" aria-hidden="true" href="#debug-et-tests-communication-série">#</a></h2>
-<p>Avant de câbler, je décide de tester simplement la communication série à l&rsquo;aide d&rsquo;une plateforme que je connais mieux : Arduino. Dès notre première année de BUT GEII nous avons pu concevoir une carte Arduino Leonardo en CAO et souder ses composants.</p>
-<p><figure class="align-center ">
-    <img loading="lazy" src="image0.jpeg#center" width="450px"/> 
-</figure>
-
-<em>Elle est quand même pas mal cette carte !</em></p>
-<p>Cette carte permet l&rsquo;utilisation de deux ports série matériels en même temps, ce qui est plus simple et plus pratique pour tester le robot. Avec une simple configuration multiserial je le câble et j&rsquo;obtiens un petit message de mon robot :</p>
-<p><img loading="lazy" src="image-7.png" alt="Boot message Roomba 551"  />
-
-<em>Apparament il est resté bloqué en 2010&hellip;</em></p>
-<p>Je décide d&rsquo;aller plus loin et de chercher des travaux préexistants sur le Roomba en Arduino. Je tombe sur ce repo Github ( <a href="https://github.com/pkyanam/ArduRoomba">https://github.com/pkyanam/ArduRoomba</a> ) et tout y est. Toutes les commandes et les opcodes associés. J&rsquo;essaie alors la commande Start (Initialisation com série), Safe (Safe Mode Roomba) puis Clean (Mode nettoyage), et le robot lance un cycle de nettoyage. C&rsquo;est merveilleux !</p>
-<p>Je décide enfin de câbler mon ESP, ce câblage est temporaire le temps que la solution fonctionne :</p>
-<p><figure class="align-center ">
-    <img loading="lazy" src="image-5.png#center" width="450px"/> 
-</figure>
-
-<em>Oui c&rsquo;est pas très propre pour l&rsquo;instant.</em></p>
-<h2 id="esphome-un-framework-simple-et-puissant">ESPHome, un framework simple et puissant<a hidden class="anchor" aria-hidden="true" href="#esphome-un-framework-simple-et-puissant">#</a></h2>
-<p>ESPHome est un framework qui permet de programmer des microcontrôleurs ESP très simplement et de les intégrer dans des systèmes domotiques pré-existants. Pour ma part ça sera Home Assistant.</p>
-<p>Afin d&rsquo;installer ESPHome sur Home Assistant, je me rends dans <strong>Modules complémentaires / Store / ESPHome</strong>. Une fois le module installé, on arrive sur une page permettant d&rsquo;ajouter un appareil avec <strong>New Device</strong>. À partir de là, tout est guidé. Il suffit d&rsquo;installer ESPHome ainsi qu&rsquo;une configuration Wi-Fi sur un microcontrolleur branché en USB. Une fois cela, fait-il n&rsquo;y a plus besoin de brancher l&rsquo;appareil et les mises à jour peuvent se faire en OTA (Over The Air).</p>
-<p>Le fichier de configuration permet de directement intégrer du code sur l&rsquo;appareil et de faire le lien avec les entités Home Assistant. Mon premier fichier de configuration utilise la fonction UART de ESPHome afin de communiquer avec le robot :</p>
-<h3 id="première-config--commande-seulement">Première config : Commande seulement<a hidden class="anchor" aria-hidden="true" href="#première-config--commande-seulement">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Config ESPHome</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">esphome</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#ae81ff">roombaesp</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">friendly_name</span>: <span style="color:#ae81ff">roombaesp</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">esp32</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">board</span>: <span style="color:#ae81ff">esp32dev</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">framework</span>:
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">arduino</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pour des raisons de sécurité les config Wifi et API on été supprimées</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialisation UART</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">uart</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">baud_rate</span>: <span style="color:#ae81ff">19200</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tx_pin</span>: <span style="color:#ae81ff">GPIO1</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">rx_pin</span>: <span style="color:#ae81ff">GPIO3</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stop_bits</span>: <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">output</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">gpio</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">id</span>: <span style="color:#ae81ff">brc_pin</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">pin</span>: <span style="color:#ae81ff">GPIO21</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">inverted</span>: <span style="color:#66d9ef">false</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commandes du Roomba</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">switch</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Setup&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">then</span>:
-</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">output.turn_on</span>: <span style="color:#ae81ff">brc_pin</span>
-</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">2s</span>
-</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">repeat</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">count</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">then</span>:
-</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">output.turn_off</span>: <span style="color:#ae81ff">brc_pin</span>
-</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">100ms</span>
-</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">output.turn_on</span>: <span style="color:#ae81ff">brc_pin</span>
-</span></span><span style="display:flex;"><span>              - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">100ms</span>
-</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">128</span>]
-</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">delay</span>: <span style="color:#ae81ff">100ms</span>
-</span></span><span style="display:flex;"><span>        - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">131</span>]
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Clean&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">135</span>]
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Power&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">133</span>]
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Base&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">143</span>]
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Start&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">128</span>]
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Safe&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">turn_on_action</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">uart.write</span>: [<span style="color:#ae81ff">131</span>]
-</span></span></code></pre></div><p>Cette configuration fonctionne, mais aucun retour d&rsquo;information du robot n&rsquo;est disponible. Il est possible d&rsquo;écrire un bout de code pour récupérer chaque information, mais par chance, cela a déjà été fait par la communauté ESPHome (voir <a href="https://community.home-assistant.io/t/add-wifi-to-an-older-roomba/23282">https://community.home-assistant.io/t/add-wifi-to-an-older-roomba/23282</a> ). Il me suffit de combiner mon code et celui de ce repo github sur la branche UART ( <a href="https://github.com/davidecavestro/ESPHomeRoombaComponent/tree/uart">https://github.com/davidecavestro/ESPHomeRoombaComponent/tree/uart</a> ) afin d&rsquo;à la fois avoir les capteurs, mais aussi les commandes !</p>
-<h3 id="deuxième-config--commande-et-capteurs">Deuxième config : Commande et capteurs<a hidden class="anchor" aria-hidden="true" href="#deuxième-config--commande-et-capteurs">#</a></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># Config ESPHomes et Bibliothèques</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">esphome</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;roomba&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">esp32</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">board</span>: <span style="color:#ae81ff">esp32dev</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">includes</span>:
-</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">ESPHomeRoombaComponent.h</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">libraries</span>:
-</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">EspSoftwareSerial</span>
-</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">Roomba=https://github.com/davidecavestro/Roomba.git</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">substitutions</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">friendly_name</span>: <span style="color:#e6db74">&#34;Roomba&#34;</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># BRC pin, RX pin, TX pin, polling interval in milliseconds</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#75715e"># Pin 3 is labeled rx on the wemos d1 mini, 1 is labeled TX We don&#39;t use the hardware UART but we&#39;re using its pins!</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">init</span>: <span style="color:#e6db74">&#34;RoombaComponent::instance(21, id(uart_bus), 8000, false);&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Pour des raisons de sécurité les config Wifi et API on été supprimées</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Initialisation UART</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">uart</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">id</span>: <span style="color:#ae81ff">uart_bus</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tx_pin</span>: <span style="color:#ae81ff">GPIO1</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">rx_pin</span>: <span style="color:#ae81ff">GPIO3</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">baud_rate</span>: <span style="color:#ae81ff">115200</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Enable logging</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">logger</span>:
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">hardware_uart</span>: <span style="color:#ae81ff">UART1</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Capteurs du Roomba</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">custom_component</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      return {r};</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">sensor</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">custom</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      return {r-&gt;voltageSensor, r-&gt;currentSensor, r-&gt;batteryChargeSensor, r-&gt;batteryCapacitySensor, r-&gt;batteryPercentSensor, r-&gt;batteryTemperatureSensor, r-&gt;driveSpeedSensor};</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sensors</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} voltage&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;V&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:sine-wave</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} current&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;A&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:lightning-bolt</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} charge&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;Ah&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery-charging</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} capacity&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;Ah&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">2</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">multiply</span>: <span style="color:#ae81ff">0.001</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} battery&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;%&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">state_class</span>: <span style="color:#e6db74">&#34;measurement&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">device_class</span>: <span style="color:#ae81ff">battery</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery-outline</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} temperature&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;°C&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:thermometer</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">filters</span>:
-</span></span><span style="display:flex;"><span>          - <span style="color:#f92672">quantile</span>:
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">window_size</span>: <span style="color:#ae81ff">7</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_every</span>: <span style="color:#ae81ff">4</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">send_first_at</span>: <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">quantile</span>: <span style="color:#ae81ff">.9</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} drive speed&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">unit_of_measurement</span>: <span style="color:#e6db74">&#34;mm/s&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:speedometer</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">accuracy_decimals</span>: <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">text_sensor</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">custom</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      return {r-&gt;chargingSensor, r-&gt;activitySensor, r-&gt;oiModeSensor};</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">text_sensors</span>:
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} charging state&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:battery-charging-high</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} activity&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:robot-vacuum-variant</span>
-</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;${friendly_name} OI mode&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">icon</span>: <span style="color:#ae81ff">mdi:steering</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Commandes du Roomba</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">button</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Locate&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;locate&#34;);</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Dock&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;dock&#34;);</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Clean&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;start&#34;);</span>
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">name</span>: <span style="color:#e6db74">&#34;Sleep&#34;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">on_press</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">lambda</span>: |-<span style="color:#e6db74">
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        auto r = ${init}
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        r-&gt;on_command(&#34;sleep&#34;);</span>
-</span></span></code></pre></div><p>Tout fonctionne parfaitement et tout est disponible sur Home Assistant :</p>
-<p><img loading="lazy" src="image-2.png" alt="alt text"  />
+<em>Terrain</em></p>
+<p>Afin d’aider à la localisation, chaque robot peut s’appuyer sur un maximum de trois balises disposées aux coins et bords du terrain. Les balises doivent respecter des contraintes de taille, de sécurité (notamment pour les émissions lumineuses ou sonores) et d’autonomie en énergie selon leur emplacement. Le départ se fait par un retrait de prise jack, et le robot a un maximum de 90 secondes pour atteindre sa zone. Pour valider son arrivée, il doit s’immobiliser et faire éclater un ballon. Le système de points attribués dépend du comportement du robot (démarrage autonome, arrivée, classement) et incite à concevoir un système fiable, rapide et intelligent. Ce projet m’a permis de mettre en œuvre de nombreuses compétences en électronique, programmation, traitement de capteurs et impression 3d. C’est aussi un projet riche en collaboration, car il requiert coordination et échanges avec mes camarades.</p>
+<h2 id="mes-missions-dans-le-projet">Mes missions dans le projet<a hidden class="anchor" aria-hidden="true" href="#mes-missions-dans-le-projet">#</a></h2>
+<p>J’ai réalisé l’intégralité des pièces du robot en impression 3D, de la conception à la fabrication. J’ai aussi conçu seul la carte IHM, qui permet à l’utilisateur d’interagir avec le robot. Enfin, j’ai travaillé en binôme avec Mathis sur la carte commande : j’ai réalisé le schéma électronique pendant qu’il s’est chargé du routage du PCB et de la programmation associée. Ces tâches m’ont permis de développer mes compétences techniques en électronique et en conception, tout en collaborant efficacement sur un projet d’envergure.</p>
+<h2 id="carte-commande">Carte commande<a hidden class="anchor" aria-hidden="true" href="#carte-commande">#</a></h2>
+<p>Pour la carte commande, ma mission principale a été de concevoir le schéma électronique en intégrant plusieurs éléments clés : la gestion de la batterie, les encodeurs, les connecteurs pour les moteurs, le jack de démarrage, la mesure de la tension batterie, ainsi que les connecteurs pour les capteurs de ligne. J’ai travaillé à partir de la carte de première année, en l’adaptant aux besoins spécifiques de ce projet. Cela a notamment impliqué la modification du microcontrôleur, en remplaçant le mbed KL25z par un STM32 Nucleo, plus adapté aux contraintes et fonctionnalités attendues. Cette évolution a permis de mieux répondre aux exigences du challenge tout en conservant une base fonctionnelle solide.</p>
+<p><img loading="lazy" src="command_sch.png" alt="Schématique Carte Commande "  />
 </p>
-<h2 id="template-home-assistant-et-assistants-vocaux">Template Home Assistant et Assistants vocaux<a hidden class="anchor" aria-hidden="true" href="#template-home-assistant-et-assistants-vocaux">#</a></h2>
-<p>Maintenant, je souhaite faire en sorte que mon appareil s&rsquo;affiche en tant que robot aspirateur. Cela permettra l&rsquo;intégration de services comme Apple Homekit ou Google Assitant. Pour cela, rien de plus simple, il me suffit de faire une <strong>Vacuum Template</strong> sur Home Assistant. L&rsquo;objectif est simplement de reprendre les entités de l&rsquo;ESP32 et de les associer à chaque fonctionnalité d&rsquo;une entité robot aspirateur :</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">vacuum</span>:
-</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">platform</span>: <span style="color:#ae81ff">template</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">vacuums</span>:
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">roomba</span>:
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">value_template</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_activity&#39;)|lower }}&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">battery_level_template</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_battery&#39;)|int }}&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">attribute_templates</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">activity</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_activity&#39;) }}&#34;</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">oi_mode</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_oi_mode&#39;)|title }}&#34;</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">charging_state</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_charging_state&#39;) }}&#34;</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">temperature</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_temperature&#39;)|int }} °C&#34;</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">voltage</span>: <span style="color:#e6db74">&#34;{{ states(&#39;sensor.roomba_voltage&#39;)|int }} V&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">start</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">service</span>: <span style="color:#ae81ff">button.press</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">target</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">button.clean</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">stop</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">service</span>: <span style="color:#ae81ff">button.press</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">target</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">button.locate</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">return_to_base</span>:
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">service</span>: <span style="color:#ae81ff">button.press</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">target</span>:
-</span></span><span style="display:flex;"><span>            <span style="color:#f92672">entity_id</span>: <span style="color:#ae81ff">button.dock</span>
-</span></span></code></pre></div><p>On obtient bien notre appareil qui est prêt à être intégré sur les assistants vocaux :</p>
+<h2 id="carte-ihm">Carte IHM<a hidden class="anchor" aria-hidden="true" href="#carte-ihm">#</a></h2>
+<p>J’ai conçu une carte IHM pour permettre à l’utilisateur de communiquer avec le robot. Ma mission principale a été d’intégrer un servomoteur MG995, utilisé pour éclater un ballon à la fin du parcours, commandé par un signal PWM. J’ai également installé trois LEDs et trois boutons.</p>
+<p>J’ai aussi intégré un écran LCD TFT ST7735 de 1,8 pouce, avec une résolution de 128 x 160 pixels, connecté au microcontrôleur Nucleo F303k8 via SPI. Pour le rétroéclairage, j’ai configuré le contrôle PWM en mode direct. J’ai programmé l’écran avec une bibliothèque mbed spécifique, permettant l’affichage de texte, la gestion de la luminosité et le dessin de formes géométriques.</p>
+<p>Enfin, j’ai implémenté l’affichage d’images au format RGB565 après conversion avec un script Python, tout en respectant la limite mémoire de la carte. La communication avec le robot se fait via le bus CAN à l’adresse 0x103.</p>
 <p><figure class="align-center ">
-    <img loading="lazy" src="image-3.png#center" width="450px"/> 
+    <img loading="lazy" src="IHM_sch.png#center" width="600px"/> 
 </figure>
 
-<em>Mission réussie !</em></p>
-<p>Il me reste plus qu&rsquo;à attendre la mise à jour Apple Homekit plus tard cette année pour le support des robots aspirateurs. :)</p>
+<em>Schématique carte IHM</em>
+<figure class="align-center ">
+    <img loading="lazy" src="IHM_pcb.png#center" width="600px"/> 
+</figure>
+
+<em>PCB carte IHM</em></p>
+<p>Code Carte IHM</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;CANMsg.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;image.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;lcd_base.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;mbed.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&#34;st7735.h&#34;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Constante
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#define PERIOD 0.01 </span><span style="color:#75715e">// periode
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Déclaration
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>ST7735_LCD <span style="color:#a6e22e">lcd</span>(A3, A2, A0, A4, A6, A1, Direct, <span style="color:#ae81ff">20</span>); <span style="color:#75715e">// cs, reset, dc, scl, sda, bl 
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>CAN <span style="color:#a6e22e">can</span>(D10, D2); <span style="color:#75715e">// CAN Rx pin name, CAN Tx pin name
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Serial <span style="color:#a6e22e">pc</span>(USBTX, USBRX);
+</span></span><span style="display:flex;"><span>CANMsg rxMsg;
+</span></span><span style="display:flex;"><span>CANMsg txMsg;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Gere les servomoteurs
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>PwmOut <span style="color:#a6e22e">servo1</span>(PA_9);
+</span></span><span style="display:flex;"><span>PwmOut <span style="color:#a6e22e">servo2</span>(D11);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Bus de bits des entrées/sorties
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>BusOut <span style="color:#a6e22e">myled</span>(PB_0, PA_10, PB_6);
+</span></span><span style="display:flex;"><span>DigitalIn <span style="color:#a6e22e">bus_bp</span>(PB_1);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Gestion des interruptions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Ticker tic;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Variables globales Bus CAN
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> ID_CARTE_COMMANDE <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x100</span>; <span style="color:#75715e">// id carte commande
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">int</span> ID_CARTE_IHM <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x103</span>;       <span style="color:#75715e">// id carte ihm
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uint8_t</span> etat_led1 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, etat_led2 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, etat_led3 <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, etat;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">uint8_t</span> bp <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Variables globales Main
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>bitmap_t myImage;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> flag_led <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">char</span> mess[<span style="color:#ae81ff">20</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Initialisation des fonctions
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">Init</span>(<span style="color:#66d9ef">void</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">inverse_led</span>();
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCanReceived</span>(<span style="color:#66d9ef">void</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">send_message_to_commande</span>(<span style="color:#66d9ef">void</span>);
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">affichage_lcd</span>();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Début du Main
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>    Init();
+</span></span><span style="display:flex;"><span>    affichage_lcd();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Début de la boucle infinie
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">while</span> (<span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        bp <span style="color:#f92672">=</span> bus_bp.read();
+</span></span><span style="display:flex;"><span>        pc.printf(<span style="color:#e6db74">&#34;%d </span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">&#34;</span>, bus_bp.read());
+</span></span><span style="display:flex;"><span>        sprintf(mess, <span style="color:#e6db74">&#34;bp= %d&#34;</span>, bp);
+</span></span><span style="display:flex;"><span>        lcd.Print(mess, LEFT, <span style="color:#ae81ff">25</span>, COLOR_YELLOW, COLOR_BLACK); <span style="color:#75715e">// align text to center horizontally
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>        affichage_lcd();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        servo1.pulsewidth_ms(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>        servo2.pulsewidth_ms(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>        wait(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span>        servo1.pulsewidth_ms(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>        servo2.pulsewidth_ms(<span style="color:#ae81ff">2</span>);
+</span></span><span style="display:flex;"><span>        wait(<span style="color:#ae81ff">0.5</span>);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">Init</span>(<span style="color:#66d9ef">void</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Fixation de la vitesse de transmission des ports séries
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    pc.baud(<span style="color:#ae81ff">9600</span>);               <span style="color:#75715e">// set serial speed
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    can.frequency(<span style="color:#ae81ff">1000000</span>);      <span style="color:#75715e">// set CAN bit rate to 1Mbps
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Filtrage BUSCAN
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    can.filter(ID_CARTE_COMMANDE, <span style="color:#ae81ff">0xFFF</span>, CANStandard, <span style="color:#ae81ff">0</span>); <span style="color:#75715e">// que les messages de la carte commande interviennent
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    can.attach(onCanReceived);                             <span style="color:#75715e">// attach ISR to handle received messages
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    bus_bp.mode(PullNone); <span style="color:#75715e">// Pinmode
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Structure de la variable myImage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    myImage.Width <span style="color:#f92672">=</span> image_width;
+</span></span><span style="display:flex;"><span>    myImage.Height <span style="color:#f92672">=</span> image_height;
+</span></span><span style="display:flex;"><span>    myImage.PixelData <span style="color:#f92672">=</span> image_data;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Interruption des timers
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    tic.attach(<span style="color:#f92672">&amp;</span>inverse_led, <span style="color:#ae81ff">1</span>); <span style="color:#75715e">// inverse l&#39;état des leds toutes les secondes
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Initialisation des périodes à 20ms
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    servo1.period_ms(<span style="color:#ae81ff">20</span>);
+</span></span><span style="display:flex;"><span>    servo2.period_ms(<span style="color:#ae81ff">20</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">inverse_led</span>() {
+</span></span><span style="display:flex;"><span>    flag_led <span style="color:#f92672">=</span> <span style="color:#f92672">!</span>flag_led;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (flag_led <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>        myled.write(<span style="color:#ae81ff">7</span>);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>
+</span></span><span style="display:flex;"><span>        myled.write(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">onCanReceived</span>(<span style="color:#66d9ef">void</span>) {
+</span></span><span style="display:flex;"><span>    can.read(rxMsg);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (rxMsg.id <span style="color:#f92672">==</span> ID_CARTE_COMMANDE) {
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// extract data from the received CAN message
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#75715e">// in the same order as it was added on the transmitter side
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        rxMsg <span style="color:#f92672">&gt;&gt;</span> etat_led1;
+</span></span><span style="display:flex;"><span>        rxMsg <span style="color:#f92672">&gt;&gt;</span> etat_led2;
+</span></span><span style="display:flex;"><span>        rxMsg <span style="color:#f92672">&gt;&gt;</span> etat_led3;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">send_message_to_commande</span>(<span style="color:#66d9ef">void</span>) {
+</span></span><span style="display:flex;"><span>    bp <span style="color:#f92672">=</span> bus_bp.read();
+</span></span><span style="display:flex;"><span>    txMsg.clear();           <span style="color:#75715e">// clear Tx message storage
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    txMsg.id <span style="color:#f92672">=</span> ID_CARTE_IHM; <span style="color:#75715e">// set ID
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span> 
+</span></span></code></pre></div><h2 id="impression-3d">Impression 3d<a hidden class="anchor" aria-hidden="true" href="#impression-3d">#</a></h2>
+<div id="viewer-/models/tour.stl" style="width: 100%; height: 500px; background: #111;"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.154.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.154.0/examples/js/loaders/STLLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.154.0/examples/js/controls/OrbitControls.js"></script>
+
+<script>
+(function () {
+  const containerId = "viewer-\/models\/tour.stl";
+  const container = document.getElementById(containerId);
+
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(45, container.clientWidth / container.clientHeight, 0.1, 1000);
+  camera.position.set(0, 0, 100);
+
+  const renderer = new THREE.WebGLRenderer({ antialias: true });
+  renderer.setSize(container.clientWidth, container.clientHeight);
+  container.appendChild(renderer.domElement);
+
+  const controls = new THREE.OrbitControls(camera, renderer.domElement);
+  controls.enableDamping = true;
+
+  const light = new THREE.DirectionalLight(0xffffff, 1);
+  light.position.set(0, 0, 1).normalize();
+  scene.add(light);
+  scene.add(new THREE.AmbientLight(0x404040));
+
+  const loader = new THREE.STLLoader();
+  loader.load("\/models\/tour.stl", function (geometry) {
+    const material = new THREE.MeshNormalMaterial({ flatShading: true });
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    
+    geometry.computeBoundingBox();
+    const box = geometry.boundingBox;
+    const center = new THREE.Vector3();
+    box.getCenter(center);
+    mesh.geometry.center();
+
+    const size = box.getSize(new THREE.Vector3()).length();
+    camera.position.set(0, 0, size * 1.5);
+    camera.lookAt(0, 0, 0);
+
+    
+    renderer.setAnimationLoop(() => {
+      controls.update();
+      renderer.render(scene, camera);
+    });
+  }, undefined, function (err) {
+    console.error("Erreur de chargement STL :", err);
+    container.innerHTML = "<p style='color:red;'>Erreur de chargement du fichier STL.</p>";
+  });
+})();
+</script>
+
 
 
   </div>
@@ -479,15 +376,15 @@ Le Roomba est l&rsquo;un des premiers robots aspirateurs, commercialisé en 2002
       <li><a href="http://localhost:1313/fr/tags/geii/">GEII</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/fr/projects/esp-roomba/">
+  <a class="prev" href="http://localhost:1313/fr/projects/Arroseur-de-plante/">
     <span class="title">« Précédent</span>
     <br>
-    <span>Concours de Robotique Cachan deuxième</span>
+    <span>Arroseur de plante</span>
   </a>
-  <a class="next" href="http://localhost:1313/fr/projects/esp-roomba/">
+  <a class="next" href="http://localhost:1313/fr/projects/Concours-robot-cachan-V1/">
     <span class="title">Suivant »</span>
     <br>
-    <span>Concours de Robotique Cachan deuxième</span>
+    <span>Concours de Robotique Cachan première année</span>
   </a>
 </nav>
 

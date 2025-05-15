@@ -11,90 +11,13 @@
     </image>
     <generator>Hugo -- 0.147.3</generator>
     <language>fr</language>
-    <lastBuildDate>Thu, 20 Feb 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Aug 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/fr/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Banc De Test</title>
-      <link>http://localhost:1313/fr/tags/banc-de-test/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/banc-de-test/</guid>
-      <description></description>
-    </item>
     <item>
       <title>GEII</title>
       <link>http://localhost:1313/fr/tags/geii/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/tags/geii/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>IUT De L&#39;Indre</title>
-      <link>http://localhost:1313/fr/tags/iut-de-lindre/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/iut-de-lindre/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Kart Électrique</title>
-      <link>http://localhost:1313/fr/tags/kart-%C3%A9lectrique/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/kart-%C3%A9lectrique/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Pdf</title>
-      <link>http://localhost:1313/fr/tags/pdf/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/pdf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Projet Universitaire</title>
-      <link>http://localhost:1313/fr/tags/projet-universitaire/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/projet-universitaire/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rapport</title>
-      <link>http://localhost:1313/fr/tags/rapport/</link>
-      <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/rapport/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Installation</title>
-      <link>http://localhost:1313/fr/tags/installation/</link>
-      <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/installation/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Mise en Route</title>
-      <link>http://localhost:1313/fr/tags/mise-en-route/</link>
-      <pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/mise-en-route/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Domotique</title>
-      <link>http://localhost:1313/fr/tags/domotique/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/domotique/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ESP Home</title>
-      <link>http://localhost:1313/fr/tags/esp-home/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/esp-home/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Home Assistant</title>
-      <link>http://localhost:1313/fr/tags/home-assistant/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/home-assistant/</guid>
       <description></description>
     </item>
     <item>
@@ -105,38 +28,31 @@
       <description></description>
     </item>
     <item>
-      <title>Roomba</title>
-      <link>http://localhost:1313/fr/tags/roomba/</link>
-      <pubDate>Sat, 31 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/roomba/</guid>
+      <title>Domotique</title>
+      <link>http://localhost:1313/fr/tags/domotique/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/domotique/</guid>
       <description></description>
     </item>
     <item>
       <title>Énergie</title>
       <link>http://localhost:1313/fr/tags/%C3%A9nergie/</link>
-      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/tags/%C3%A9nergie/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Assistant</title>
+      <link>http://localhost:1313/fr/tags/home-assistant/</link>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/fr/tags/home-assistant/</guid>
       <description></description>
     </item>
     <item>
       <title>Monitoring</title>
       <link>http://localhost:1313/fr/tags/monitoring/</link>
-      <pubDate>Mon, 22 Jul 2024 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 24 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/fr/tags/monitoring/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Luminaire</title>
-      <link>http://localhost:1313/fr/tags/luminaire/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/luminaire/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Rénovation</title>
-      <link>http://localhost:1313/fr/tags/r%C3%A9novation/</link>
-      <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/fr/tags/r%C3%A9novation/</guid>
       <description></description>
     </item>
   </channel>

@@ -1,12 +1,12 @@
 ---
 title: "Concours de Robotique Cachan deuxième"
 date: 2024-08-31
-url: "/fr/projects/CXoncours-robot-cachan-V2/"
+url: "/fr/projects/Concours-robot-cachan-V2/"
 category: projects
 summary:
 description:
 cover:
-  image: image2-1.jpeg
+  image: 2.JPG
   alt:
   caption:
   relative: true
@@ -18,336 +18,168 @@ hidemeta: false
 tags: ["projet", "GEII"]
 keywords: ["projet", "GEII"]
 ---
+Pendant ma deuxième année à l’IUT de Nice, j’ai participé au projet national de la Rencontre Robotique des IUT GEII. Cet événement regroupe des étudiants de toute la France autour d’un défi commun : concevoir un robot totalement autonome capable de parcourir un terrain rempli d’obstacles, d’un coin à l’autre, sans aucune intervention extérieure. Le projet sur lequel j’ai travaillé s’inscrit dans le cadre du challenge ESCAPEBOT.
 
-## Intégrer de la domotique dans un produit vieux de 16 ans
+## Explication Du projet
 
-Le Roomba est l'un des premiers robots aspirateurs, commercialisé en 2002. Cette technologie était révolutionnaire pour l'époque et le prix était plutôt couteux. De nos jours, de nombreux constructeurs proposent des robots aspirateurs connectés en Wifi avec d'innombrables fonctionnalités. Je me rappelle étant petit, que nous avions un de ces robots. En cherchant un peu, je le retrouve sous les cartons empilés.
+ Le principe est simple en apparence, mais exigeant sur le plan technique : chaque robot, doit quitter sa zone de départ et rejoindre sa zone d’arrivée située en diagonale, tout en évitant les obstacles de 15 cm de hauteur répartis aléatoirement sur le terrain. Le terrain, d’une surface de 8 m sur 8 m, est conçu pour que les parcours soient équivalents pour tous les robots.
 
-Ce robot est le Roomba 551, il a été commercialisé en 2008 et apportait à l'époque la programmation automatique de nettoyages. En essayant de le charger, rien ne se passe, je le démonte et je retrouve une batterie complétement rouillée et à plat. J'en décide d'en commander une autre et je remarque un port DIN7 sur la face supérieure de l'appareil.
+ {{< figure src="photo.jpg" align="center" width="600px">}}
+_Terrain_
 
-{{< figure src="image-4.png" align="center" width="450px">}}
-_Port DIN7 du Roomba._
+ Afin d’aider à la localisation, chaque robot peut s’appuyer sur un maximum de trois balises disposées aux coins et bords du terrain. Les balises doivent respecter des contraintes de taille, de sécurité (notamment pour les émissions lumineuses ou sonores) et d’autonomie en énergie selon leur emplacement. Le départ se fait par un retrait de prise jack, et le robot a un maximum de 90 secondes pour atteindre sa zone. Pour valider son arrivée, il doit s’immobiliser et faire éclater un ballon. Le système de points attribués dépend du comportement du robot (démarrage autonome, arrivée, classement) et incite à concevoir un système fiable, rapide et intelligent. Ce projet m’a permis de mettre en œuvre de nombreuses compétences en électronique, programmation, traitement de capteurs et impression 3d. C’est aussi un projet riche en collaboration, car il requiert coordination et échanges avec mes camarades.
 
-En faisant quelques recherches, je tombe sur toute une documentation destinée à la programmation et à la modification du firmware, ce programme s'appelle l'iRobot Roomba Open Interface ( http://www.robotikasklubs.lv/read_write/file/Piemers/iRobot_Roomba_500_Open_Interface_Spec.pdf ).
 
-![Pin map port DIN7 dans l'iRobot Roomba Open Interface](image.png)
-_Pin map port DIN7 dans l'iRobot Roomba Open Interface_
+## Mes missions dans le projet
 
-Tout y est décrit, les spécificités de la communication série, les opcodes de contrôle de l'appareil, le poids, la vitesse, les capteurs, tout y est. Une seule chose me vient en tête, c'est de connecter cet aspirateur Robot à Home Assistant. Il me suffit juste d'intégrer une solution avec un microcontrôleur Wifi.
+J’ai réalisé l’intégralité des pièces du robot en impression 3D, de la conception à la fabrication. J’ai aussi conçu seul la carte IHM, qui permet à l’utilisateur d’interagir avec le robot. Enfin, j’ai travaillé en binôme avec Mathis sur la carte commande : j’ai réalisé le schéma électronique pendant qu’il s’est chargé du routage du PCB et de la programmation associée. Ces tâches m’ont permis de développer mes compétences techniques en électronique et en conception, tout en collaborant efficacement sur un projet d’envergure.
 
-## Choix du microcontrolleur et schéma de cablâge
+## Carte commande
 
-Le premier choix pour un microcontrôleur avec des capacités Wi-Fi est l'ESP, et plus précisément l'ESP32. C'est la plateforme la plus simple, la plus complète et la moins chère actuellement. On la retrouve sur tous les appareils domotiques, sous différentes formes, mais cela reste la même puce. J'opte pour un module ESP32-WROOM à 2€.
+Pour la carte commande, ma mission principale a été de concevoir le schéma électronique en intégrant plusieurs éléments clés : la gestion de la batterie, les encodeurs, les connecteurs pour les moteurs, le jack de démarrage, la mesure de la tension batterie, ainsi que les connecteurs pour les capteurs de ligne. J’ai travaillé à partir de la carte de première année, en l’adaptant aux besoins spécifiques de ce projet. Cela a notamment impliqué la modification du microcontrôleur, en remplaçant le mbed KL25z par un STM32 Nucleo, plus adapté aux contraintes et fonctionnalités attendues. Cette évolution a permis de mieux répondre aux exigences du challenge tout en conservant une base fonctionnelle solide.
 
-Ce module ESP nécessite une alimentation de 5V, cependant aucun pin du port DIN7 ne fournit celle-ci. Un port fournit l'alimentation directe provenant de la batterie. Celle-ci indique une tension de 14.4V, mais il est bien évident que la tension d'une batterie varie avec sa charge. C'est pourquoi j'ai choisi un convertisseur DC-DC buck afin de simplement réduire la tension, qu'elle soit de 14V ou de 11V à 5V pour l'ESP32. Le câblage sera le suivant :
+![Schématique Carte Commande ](command_sch.png)
 
-![Schéma de câblage](image-1.png)
-_Schéma de câblage de l'ESP et du convertisseur buck_
 
-Le pin BRC permettra d'allumer le Roomba s'il s'éteint. C'est la seule manière pour le réveiller avec l'appui physique du bouton.
 
-## Debug et tests communication série
 
-Avant de câbler, je décide de tester simplement la communication série à l'aide d'une plateforme que je connais mieux : Arduino. Dès notre première année de BUT GEII nous avons pu concevoir une carte Arduino Leonardo en CAO et souder ses composants.
+## Carte IHM
 
-{{< figure src="image0.jpeg" align="center" width="450px">}}
-_Elle est quand même pas mal cette carte !_
+J’ai conçu une carte IHM pour permettre à l’utilisateur de communiquer avec le robot. Ma mission principale a été d’intégrer un servomoteur MG995, utilisé pour éclater un ballon à la fin du parcours, commandé par un signal PWM. J’ai également installé trois LEDs et trois boutons.
 
-Cette carte permet l'utilisation de deux ports série matériels en même temps, ce qui est plus simple et plus pratique pour tester le robot. Avec une simple configuration multiserial je le câble et j'obtiens un petit message de mon robot :
+J’ai aussi intégré un écran LCD TFT ST7735 de 1,8 pouce, avec une résolution de 128 x 160 pixels, connecté au microcontrôleur Nucleo F303k8 via SPI. Pour le rétroéclairage, j’ai configuré le contrôle PWM en mode direct. J’ai programmé l’écran avec une bibliothèque mbed spécifique, permettant l’affichage de texte, la gestion de la luminosité et le dessin de formes géométriques.
 
-![Boot message Roomba 551](image-7.png)
-_Apparament il est resté bloqué en 2010..._
+Enfin, j’ai implémenté l’affichage d’images au format RGB565 après conversion avec un script Python, tout en respectant la limite mémoire de la carte. La communication avec le robot se fait via le bus CAN à l’adresse 0x103.
 
-Je décide d'aller plus loin et de chercher des travaux préexistants sur le Roomba en Arduino. Je tombe sur ce repo Github ( https://github.com/pkyanam/ArduRoomba ) et tout y est. Toutes les commandes et les opcodes associés. J'essaie alors la commande Start (Initialisation com série), Safe (Safe Mode Roomba) puis Clean (Mode nettoyage), et le robot lance un cycle de nettoyage. C'est merveilleux !
+{{< figure src="IHM_sch.png" align="center" width="600px">}}
+_Schématique carte IHM_
+{{< figure src="IHM_pcb.png" align="center" width="600px">}}
+_PCB carte IHM_
 
-Je décide enfin de câbler mon ESP, ce câblage est temporaire le temps que la solution fonctionne :
+Code Carte IHM
 
-{{< figure src="image-5.png" align="center" width="450px">}}
-_Oui c'est pas très propre pour l'instant._
+```cpp
 
-## ESPHome, un framework simple et puissant
+#include "CANMsg.h"
+#include "image.h"
+#include "lcd_base.h"
+#include "mbed.h"
+#include "st7735.h"
 
-ESPHome est un framework qui permet de programmer des microcontrôleurs ESP très simplement et de les intégrer dans des systèmes domotiques pré-existants. Pour ma part ça sera Home Assistant.
+// Constante
+#define PERIOD 0.01 // periode
 
-Afin d'installer ESPHome sur Home Assistant, je me rends dans **Modules complémentaires / Store / ESPHome**. Une fois le module installé, on arrive sur une page permettant d'ajouter un appareil avec **New Device**. À partir de là, tout est guidé. Il suffit d'installer ESPHome ainsi qu'une configuration Wi-Fi sur un microcontrolleur branché en USB. Une fois cela, fait-il n'y a plus besoin de brancher l'appareil et les mises à jour peuvent se faire en OTA (Over The Air).
+// Déclaration
+ST7735_LCD lcd(A3, A2, A0, A4, A6, A1, Direct, 20); // cs, reset, dc, scl, sda, bl 
+CAN can(D10, D2); // CAN Rx pin name, CAN Tx pin name
+Serial pc(USBTX, USBRX);
+CANMsg rxMsg;
+CANMsg txMsg;
 
-Le fichier de configuration permet de directement intégrer du code sur l'appareil et de faire le lien avec les entités Home Assistant. Mon premier fichier de configuration utilise la fonction UART de ESPHome afin de communiquer avec le robot :
+// Gere les servomoteurs
+PwmOut servo1(PA_9);
+PwmOut servo2(D11);
 
-### Première config : Commande seulement
+// Bus de bits des entrées/sorties
+BusOut myled(PB_0, PA_10, PB_6);
+DigitalIn bus_bp(PB_1);
 
-```yaml
-# Config ESPHome
-esphome:
-  name: roombaesp
-  friendly_name: roombaesp
+// Gestion des interruptions
+Ticker tic;
 
-esp32:
-  board: esp32dev
-  framework:
-    type: arduino
+// Variables globales Bus CAN
+const unsigned int ID_CARTE_COMMANDE = 0x100; // id carte commande
+const unsigned int ID_CARTE_IHM = 0x103;       // id carte ihm
 
-# Pour des raisons de sécurité les config Wifi et API on été supprimées
+uint8_t etat_led1 = 0, etat_led2 = 0, etat_led3 = 0, etat;
+uint8_t bp = 0;
 
-# Initialisation UART
-uart:
-  baud_rate: 19200
-  tx_pin: GPIO1
-  rx_pin: GPIO3
-  stop_bits: 1
+// Variables globales Main
+bitmap_t myImage;
+int flag_led = 0;
+char mess[20];
 
-output:
-  - platform: gpio
-    id: brc_pin
-    pin: GPIO21
-    inverted: false
+// Initialisation des fonctions
+void Init(void);
+void inverse_led();
+void onCanReceived(void);
+void send_message_to_commande(void);
+void affichage_lcd();
 
-# Commandes du Roomba
-switch:
-  - platform: template
-    name: "Setup"
-    turn_on_action:
-      then:
-        - output.turn_on: brc_pin
-        - delay: 2s
-        - repeat:
-            count: 3
-            then:
-              - output.turn_off: brc_pin
-              - delay: 100ms
-              - output.turn_on: brc_pin
-              - delay: 100ms
-        - uart.write: [128]
-        - delay: 100ms
-        - uart.write: [131]
-  - platform: template
-    name: "Clean"
-    turn_on_action:
-      - uart.write: [135]
-  - platform: template
-    name: "Power"
-    turn_on_action:
-      - uart.write: [133]
-  - platform: template
-    name: "Base"
-    turn_on_action:
-      - uart.write: [143]
-  - platform: template
-    name: "Start"
-    turn_on_action:
-      - uart.write: [128]
-  - platform: template
-    name: "Safe"
-    turn_on_action:
-      - uart.write: [131]
+// Début du Main
+int main() {
+    Init();
+    affichage_lcd();
+
+    // Début de la boucle infinie
+    while (1) {
+        bp = bus_bp.read();
+        pc.printf("%d \r", bus_bp.read());
+        sprintf(mess, "bp= %d", bp);
+        lcd.Print(mess, LEFT, 25, COLOR_YELLOW, COLOR_BLACK); // align text to center horizontally
+
+        affichage_lcd();
+
+        servo1.pulsewidth_ms(1);
+        servo2.pulsewidth_ms(1);
+        wait(0.5);
+        servo1.pulsewidth_ms(2);
+        servo2.pulsewidth_ms(2);
+        wait(0.5);
+    }
+}
+
+void Init(void) {
+    // Fixation de la vitesse de transmission des ports séries
+    pc.baud(9600);               // set serial speed
+    can.frequency(1000000);      // set CAN bit rate to 1Mbps
+
+    // Filtrage BUSCAN
+    can.filter(ID_CARTE_COMMANDE, 0xFFF, CANStandard, 0); // que les messages de la carte commande interviennent
+    can.attach(onCanReceived);                             // attach ISR to handle received messages
+
+    bus_bp.mode(PullNone); // Pinmode
+
+    // Structure de la variable myImage
+    myImage.Width = image_width;
+    myImage.Height = image_height;
+    myImage.PixelData = image_data;
+
+    // Interruption des timers
+    tic.attach(&inverse_led, 1); // inverse l'état des leds toutes les secondes
+
+    // Initialisation des périodes à 20ms
+    servo1.period_ms(20);
+    servo2.period_ms(20);
+}
+
+void inverse_led() {
+    flag_led = !flag_led;
+    if (flag_led == 0)
+        myled.write(7);
+    else
+        myled.write(0);
+}
+
+void onCanReceived(void) {
+    can.read(rxMsg);
+    if (rxMsg.id == ID_CARTE_COMMANDE) {
+        // extract data from the received CAN message
+        // in the same order as it was added on the transmitter side
+        rxMsg >> etat_led1;
+        rxMsg >> etat_led2;
+        rxMsg >> etat_led3;
+    }
+}
+
+void send_message_to_commande(void) {
+    bp = bus_bp.read();
+    txMsg.clear();           // clear Tx message storage
+    txMsg.id = ID_CARTE_IHM; // set ID
+}
+
+ 
 ```
+## Impression 3d
 
-Cette configuration fonctionne, mais aucun retour d'information du robot n'est disponible. Il est possible d'écrire un bout de code pour récupérer chaque information, mais par chance, cela a déjà été fait par la communauté ESPHome (voir https://community.home-assistant.io/t/add-wifi-to-an-older-roomba/23282 ). Il me suffit de combiner mon code et celui de ce repo github sur la branche UART ( https://github.com/davidecavestro/ESPHomeRoombaComponent/tree/uart ) afin d'à la fois avoir les capteurs, mais aussi les commandes !
-
-### Deuxième config : Commande et capteurs
-
-```yaml
-# Config ESPHomes et Bibliothèques
-esphome:
-  name: "roomba"
-  platform: esp32
-  board: esp32dev
-
-  includes:
-    - ESPHomeRoombaComponent.h
-  libraries:
-    - EspSoftwareSerial
-    - Roomba=https://github.com/davidecavestro/Roomba.git
-
-substitutions:
-  friendly_name: "Roomba"
-  # BRC pin, RX pin, TX pin, polling interval in milliseconds
-  # Pin 3 is labeled rx on the wemos d1 mini, 1 is labeled TX We don't use the hardware UART but we're using its pins!
-  init: "RoombaComponent::instance(21, id(uart_bus), 8000, false);"
-
-# Pour des raisons de sécurité les config Wifi et API on été supprimées
-
-# Initialisation UART
-uart:
-  id: uart_bus
-  tx_pin: GPIO1
-  rx_pin: GPIO3
-  baud_rate: 115200
-
-# Enable logging
-logger:
-  hardware_uart: UART1
-
-# Capteurs du Roomba
-
-custom_component:
-  - lambda: |-
-      auto r = ${init}
-      return {r};
-
-sensor:
-  - platform: custom
-    lambda: |-
-      auto r = ${init}
-      return {r->voltageSensor, r->currentSensor, r->batteryChargeSensor, r->batteryCapacitySensor, r->batteryPercentSensor, r->batteryTemperatureSensor, r->driveSpeedSensor};
-
-    sensors:
-      - name: "${friendly_name} voltage"
-        unit_of_measurement: "V"
-        icon: mdi:sine-wave
-        accuracy_decimals: 2
-        filters:
-          - quantile:
-              window_size: 7
-              send_every: 4
-              send_first_at: 3
-              quantile: .9
-          - multiply: 0.001
-
-      - name: "${friendly_name} current"
-        unit_of_measurement: "A"
-        icon: mdi:lightning-bolt
-        accuracy_decimals: 3
-        filters:
-          - quantile:
-              window_size: 7
-              send_every: 4
-              send_first_at: 3
-              quantile: .9
-          - multiply: 0.001
-
-      - name: "${friendly_name} charge"
-        unit_of_measurement: "Ah"
-        icon: mdi:battery-charging
-        accuracy_decimals: 2
-        filters:
-          - quantile:
-              window_size: 7
-              send_every: 4
-              send_first_at: 3
-              quantile: .9
-          - multiply: 0.001
-
-      - name: "${friendly_name} capacity"
-        unit_of_measurement: "Ah"
-        icon: mdi:battery
-        accuracy_decimals: 2
-        filters:
-          - quantile:
-              window_size: 7
-              send_every: 4
-              send_first_at: 3
-              quantile: .9
-          - multiply: 0.001
-
-      - name: "${friendly_name} battery"
-        unit_of_measurement: "%"
-        state_class: "measurement"
-        device_class: battery
-        icon: mdi:battery-outline
-        accuracy_decimals: 0
-        filters:
-          - quantile:
-              window_size: 7
-              send_every: 4
-              send_first_at: 3
-              quantile: .9
-
-      - name: "${friendly_name} temperature"
-        unit_of_measurement: "°C"
-        icon: mdi:thermometer
-        accuracy_decimals: 0
-        filters:
-          - quantile:
-              window_size: 7
-              send_every: 4
-              send_first_at: 3
-              quantile: .9
-
-      - name: "${friendly_name} drive speed"
-        unit_of_measurement: "mm/s"
-        icon: mdi:speedometer
-        accuracy_decimals: 0
-
-text_sensor:
-  - platform: custom
-    lambda: |-
-      auto r = ${init}
-      return {r->chargingSensor, r->activitySensor, r->oiModeSensor};
-    text_sensors:
-      - name: "${friendly_name} charging state"
-        icon: mdi:battery-charging-high
-      - name: "${friendly_name} activity"
-        icon: mdi:robot-vacuum-variant
-      - name: "${friendly_name} OI mode"
-        icon: mdi:steering
-
-# Commandes du Roomba
-
-button:
-  - platform: template
-    name: "Locate"
-    on_press:
-      lambda: |-
-        auto r = ${init}
-        r->on_command("locate");
-  - platform: template
-    name: "Dock"
-    on_press:
-      lambda: |-
-        auto r = ${init}
-        r->on_command("dock");
-  - platform: template
-    name: "Clean"
-    on_press:
-      lambda: |-
-        auto r = ${init}
-        r->on_command("start");
-  - platform: template
-    name: "Sleep"
-    on_press:
-      lambda: |-
-        auto r = ${init}
-        r->on_command("sleep");
-```
-
-Tout fonctionne parfaitement et tout est disponible sur Home Assistant :
-
-![alt text](image-2.png)
-
-## Template Home Assistant et Assistants vocaux
-
-Maintenant, je souhaite faire en sorte que mon appareil s'affiche en tant que robot aspirateur. Cela permettra l'intégration de services comme Apple Homekit ou Google Assitant. Pour cela, rien de plus simple, il me suffit de faire une **Vacuum Template** sur Home Assistant. L'objectif est simplement de reprendre les entités de l'ESP32 et de les associer à chaque fonctionnalité d'une entité robot aspirateur :
-
-```yaml
-vacuum:
-  - platform: template
-    vacuums:
-      roomba:
-        value_template: "{{ states('sensor.roomba_activity')|lower }}"
-        battery_level_template: "{{ states('sensor.roomba_battery')|int }}"
-        attribute_templates:
-          activity: "{{ states('sensor.roomba_activity') }}"
-          oi_mode: "{{ states('sensor.roomba_oi_mode')|title }}"
-          charging_state: "{{ states('sensor.roomba_charging_state') }}"
-          temperature: "{{ states('sensor.roomba_temperature')|int }} °C"
-          voltage: "{{ states('sensor.roomba_voltage')|int }} V"
-        start:
-          service: button.press
-          target:
-            entity_id: button.clean
-        stop:
-          service: button.press
-          target:
-            entity_id: button.locate
-        return_to_base:
-          service: button.press
-          target:
-            entity_id: button.dock
-```
-
-On obtient bien notre appareil qui est prêt à être intégré sur les assistants vocaux :
-
-{{< figure src="image-3.png" align="center" width="450px">}}
-_Mission réussie !_
-
-Il me reste plus qu'à attendre la mise à jour Apple Homekit plus tard cette année pour le support des robots aspirateurs. :)
+{{< stlviewer src="/models/tour.stl" >}}

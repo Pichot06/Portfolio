@@ -1,7 +1,7 @@
 ---
-title: "Concours de Robotique Cachan deuxième"
+title: "Concours de Robotique Cachan première année"
 date: 2024-08-31
-url: "/fr/projects/esp-roomba/"
+url: "/fr/projects/Concours-robot-cachan-V1/"
 category: projects
 summary:
 description:
